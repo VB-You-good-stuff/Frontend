@@ -14,11 +14,11 @@
       <v-divider class="mx-3 mb-2" />
 
       <v-list nav dense>
-        <v-list-item link>
+        <v-list-item link to="/about">
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>User Profile</v-list-item-title>
+          <v-list-item-title>首頁</v-list-item-title>
         </v-list-item>
 
         <v-list-group :value="true" prepend-icon="mdi-animation">
@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import navigationHeader from "./navigationHeader.vue";
+import navigationHeader from "../components/navigationHeader.vue";
 export default {
   name: "navigationDrawer",
 

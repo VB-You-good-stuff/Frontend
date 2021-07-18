@@ -2,7 +2,6 @@
   <v-app-bar
     id="default-app-bar"
     app
-    absolute
     class="v-bar--underline"
     color="transparent"
     :clipped-left="$vuetify.rtl"
@@ -12,7 +11,7 @@
   >
     <v-app-bar-nav-icon class="hidden-md-and-up" @click="changeMini()" />
 
-    <navigationToggle class="hidden-sm-and-down" />
+    <!-- <navigationToggle class="hidden-sm-and-down" /> -->
 
     <v-spacer />
     <account />
@@ -23,8 +22,8 @@
 
 <script>
 // Utilities
-import navigationToggle from "./navigationToggle.vue";
-import account from "./account.vue";
+// import navigationToggle from "../components/navigationToggle.vue";
+import account from "../components/account.vue";
 export default {
   name: "appBar",
 
@@ -33,7 +32,7 @@ export default {
     //   /* webpackChunkName: "default-search" */
     //   './widgets/Search'
     // ),
-    navigationToggle,
+    // navigationToggle,
     account,
   },
 
