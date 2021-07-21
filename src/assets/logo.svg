@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.5 100"><defs><style>.cls-1{fill:#1697f6;}.cls-2{fill:#7bc6ff;}.cls-3{fill:#1867c0;}.cls-4{fill:#aeddff;}</style></defs><title>Artboard 46</title><polyline class="cls-1" points="43.75 0 23.31 0 43.75 48.32"/><polygon class="cls-2" points="43.75 62.5 43.75 100 0 14.58 22.92 14.58 43.75 62.5"/><polyline class="cls-3" points="43.75 0 64.19 0 43.75 48.32"/><polygon class="cls-4" points="64.58 14.58 87.5 14.58 43.75 100 43.75 62.5 64.58 14.58"/></svg>
+<svg width="164" height="164" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon-BrandVisualStudioIDE</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 9374 5826)">
+<g id="icon-BrandVisualStudioIDE">
+<g id="BrandVisualStudioIDE2017RTW_40x">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-4687 -2913)" fill="#865FC5"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 61.5005 0L 61.5005 70.4277L 5.34619e-11 61.2929L 61.5005 82L 82 73.472L 82 8.528L 61.5005 0ZM 21.133 39.4502L 39.9677 58.0826L 51.2436 53.2856L 51.2436 16.7547L 39.9677 11.9577L 21.133 30.5921L 9.79153 22.0436L 5.11923 23.6078L 5.11923 46.4345L 9.79153 47.9987L 21.133 39.4502ZM 39.9677 25.254L 39.9677 44.7905L 27.0087 35.0222L 39.9677 25.254ZM 9.79153 28.2305L 16.6554 35.0201L 9.79153 41.8118L 9.79153 28.2305Z"/>
+</defs>
+</svg>
