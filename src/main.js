@@ -1,36 +1,29 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import vuetify from './plugins/vuetify'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "bootstrap";
+import vuetify from "./plugins/vuetify";
 
-import store from './store'
-import { sync } from 'vuex-router-sync'
-import Header from '@/layouts/Header'
-import SideBar from '@/layouts/SideBar'
+import store from "./store";
+import { sync } from "vuex-router-sync";
+import Header from "@/layouts/Header";
+import SideBar from "@/layouts/SideBar";
 
-
-import "sweetalert2/dist/sweetalert2.min.css"
-import "notyf/notyf.min.css"
-import "notyf"
+import "sweetalert2/dist/sweetalert2.min.css";
+import "notyf/notyf.min.css";
+import "notyf";
 //import "bootstrap/dist/css/bootstrap.min.css"
 
-import "bootstrap"
+Vue.config.productionTip = false;
 
-Vue.config.productionTip = false
+Vue.component("Header", Header);
+Vue.component("SideBar", SideBar);
 
-
-Vue.component('Header', Header)
-Vue.component('SideBar', SideBar)
-
-
-
-
-
-sync(store, router)
+sync(store, router);
 
 new Vue({
   router,
   store,
   vuetify,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");

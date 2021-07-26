@@ -1,22 +1,20 @@
 <template>
   <div>
-    <SideBar/>
+    <SideBar />
     <main class="content">
-      <Header/>
-      <div class="container-fluid" style="height:100vh">
+      <Header />
+      <div class="container-fluid">
         <v-fade-transition mode="out-in">
           <router-view />
         </v-fade-transition>
       </div>
-      
     </main>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
@@ -24,5 +22,5 @@ export default {
 };
 </script>
 <style>
-@import './assets/css/volt.css';
+@import "./assets/css/volt.css";
 </style>
