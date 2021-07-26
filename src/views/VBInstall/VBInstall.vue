@@ -14,7 +14,7 @@
     <div class="col-12 mb-4">
       <div class="mb-3 mb-lg-0">
         <h1 class="h3">創建帳號 & 下載</h1>
-        <p class="mb-0">
+        <p class="mb-0 fs-5">
           至
           <a
             href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads"
@@ -23,10 +23,10 @@
             >下載網址<v-icon color="#2361D6">mdi-open-in-new</v-icon></a
           >
 
-          ，登入<font class="text-success h6 bold ">
+          ，登入<font class="text-success  bold ">
             微軟帳號，或使用GitHub帳號 </font
-          >，若<font class="text-success h6 bold "
-            >無帳號者請先創建微軟帳號</font
+          >，若
+          <font class="text-success  bold ">無帳號者請先創建微軟帳號</font
           >，登入後會看到這個畫面
         </p>
       </div>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           語言選擇<font class="text-success bold h5">
             繁體中文(Chinese-Traditional)</font
           >
@@ -58,12 +58,12 @@
     <div class="col-12 mb-4">
       <div class="mb-3 mb-lg-0">
         <h1 class="h3">安裝Visual Studio</h1>
-        <p class="mb-0">
-          下載完成後，<font class="text-success h6 bold "
-            >開啟下載檔案之位置</font
+        <p class="mb-0 fs-5">
+          下載完成後，<font class="text-success bold ">開啟下載檔案之位置</font
           >，下載的檔案類型應該為ISO光碟檔，WIN8以上之系統可以直接<font
             class="text-success bold h5"
-            >右鍵 > 掛接</font
+          >
+            右鍵 > 掛接 </font
           >光碟檔
         </p>
       </div>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           掛接ISO檔後，直接點擊<font class="h5 text-danger bold ">
             vs_community.exe</font
           >
@@ -91,9 +91,9 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           點擊後即可看見Visual Studio的安裝畫面，可以<font
-            class=" h6 text-success bold"
+            class=" text-success bold"
             >直接使用其預設</font
           >繼續安裝，不必額外勾選其他選項
         </p>
@@ -107,7 +107,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           安裝完成後，點擊<font class="text-danger bold h5"> 啟動 </font>即可
         </p>
       </div>
@@ -120,7 +120,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           啟動後，會看見Visual Studio初次啟用的登入畫面，可以點選<font
             class="text-danger bold h5"
           >
@@ -137,7 +137,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           初次開啟Visual Studio若出現這個畫面，將
           <font class="text-success bold h5">開發環境 </font>選擇
           <font class="text-success bold h5">Visual Basic </font>，然後點擊<font
@@ -156,7 +156,7 @@
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3">
+        <p class="mb-0 mt-3 fs-5">
           開啟Visual Studio後，<font class="text-success bold ">出現</font
           >這個<font class="text-success bold ">起始畫面</font>，就代表您<font
             class="text-success bold h5"
@@ -178,8 +178,5 @@
 <style>
 .bold {
   font-weight: bold;
-}
-p {
-  font-size: 16 px;
 }
 </style>
