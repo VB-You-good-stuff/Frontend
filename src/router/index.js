@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import LogIn from "../views/pages/LogIn.vue";
 import QandA from "../views/QandA.vue";
 import VBInstall from "../views/VBInstall/VBInstall.vue";
+import VBStart from "../views/VBStart/VBStart.vue";
+import VBFuncIntro from "../views/VBStart/VBFuncIntro.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +29,16 @@ const routes = [
     path: "/VBInstall",
     name: "VBInstall",
     component: VBInstall,
+  },
+  {
+    path: "/VBStart",
+    name: "VBStart",
+    component: VBStart,
+  },
+  {
+    path: "/VBFuncIntro",
+    name: "VBFuncIntro",
+    component: VBFuncIntro,
   },
 ];
 

@@ -132,6 +132,22 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="/VBStart" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-download-box </v-icon>
+              </span>
+              <span class="sidebar-text">VB 新增專案</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/VBFuncIntro" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-download-box </v-icon>
+              </span>
+              <span class="sidebar-text">VB 功能概述</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
