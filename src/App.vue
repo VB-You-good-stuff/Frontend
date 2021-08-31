@@ -1,14 +1,6 @@
 <template>
   <div>
-    <SideBar />
-    <main class="content">
-      <Header />
-      <div class="container-fluid">
-        <v-fade-transition mode="out-in">
-          <router-view />
-        </v-fade-transition>
-      </div>
-    </main>
+    <router-view />
   </div>
 </template>
 

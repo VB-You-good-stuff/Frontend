@@ -124,20 +124,20 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/VBInstall" class="nav-link">
+            <router-link to="/VBInstall" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-download-box </v-icon>
               </span>
               <span class="sidebar-text">VB 安裝</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
-            <a href="/VBStart" class="nav-link">
+            <router-link to="/VBStart" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-download-box </v-icon>
               </span>
               <span class="sidebar-text">VB 新增專案</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a href="/VBFuncIntro" class="nav-link">
@@ -211,6 +211,15 @@
                 </li>
               </ul>
             </div>
+          </li>
+
+          <li class="nav-item">
+            <router-link to="/forum" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
+              </span>
+              <span class="sidebar-text">問題討論</span>
+            </router-link>
           </li>
         </ul>
       </div>
