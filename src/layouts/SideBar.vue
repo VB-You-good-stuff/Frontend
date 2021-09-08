@@ -106,47 +106,31 @@
               <span class="mt-1 ms-1 sidebar-text">VB 你個好東東</span>
             </a>
           </li>
-          <li class="nav-item ">
-            <a href="/Q&A" class="nav-link">
-              <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-chat-question</v-icon>
-              </span>
-              <span class="sidebar-text">Q & A</span>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a href="../../pages/settings.html" class="nav-link">
-              <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-cog</v-icon>
-              </span>
-
-              <span class="sidebar-text">Settings</span>
-            </a>
-          </li>
           <li class="nav-item">
-            <a href="/VBInstall" class="nav-link">
+            <router-link to="/VBInstall" class="nav-link">
               <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-download-box </v-icon>
+                <v-icon color="#9ca3af">mdi-download </v-icon>
               </span>
               <span class="sidebar-text">VB 安裝</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
-            <a href="/VBStart" class="nav-link">
+            <router-link to="/VBStart" class="nav-link">
               <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-download-box </v-icon>
+                <v-icon color="#9ca3af">mdi-folder-plus </v-icon>
               </span>
               <span class="sidebar-text">VB 新增專案</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a href="/VBFuncIntro" class="nav-link">
               <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-download-box </v-icon>
+                <v-icon color="#9ca3af">mdi-book </v-icon>
               </span>
               <span class="sidebar-text">VB 功能概述</span>
             </a>
           </li>
+
           <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
@@ -188,7 +172,7 @@
             >
               <span>
                 <span class="sidebar-icon">
-                  <v-icon color="#9ca3af">mdi-book-open-variant</v-icon>
+                  <v-icon color="#9ca3af">mdi-book-open-page-variant</v-icon>
                 </span>
                 <span class="sidebar-text">VB 進階語法</span>
               </span>
@@ -211,6 +195,33 @@
                 </li>
               </ul>
             </div>
+          </li>
+
+          <li class="nav-item ">
+            <a href="/VBQ&A" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-chat-question</v-icon>
+              </span>
+              <span class="sidebar-text">常見問題</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <router-link to="/forum" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
+              </span>
+              <span class="sidebar-text">問題討論</span>
+            </router-link>
+          </li>
+
+          <li class="nav-item ">
+            <a href="../../pages/settings.html" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-cog</v-icon>
+              </span>
+
+              <span class="sidebar-text">Settings</span>
+            </a>
           </li>
         </ul>
       </div>

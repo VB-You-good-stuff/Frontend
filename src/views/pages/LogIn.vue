@@ -2,12 +2,12 @@
   <!-- Section -->
   <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
     <div class="container">
-      <p class="text-center">
+      <!-- <p class="text-center">
         <a href="/" class="d-flex align-items-center justify-content-center">
           <v-icon large>mdi-arrow-left</v-icon>
           回首頁
         </a>
-      </p>
+      </p> -->
       <div
         class="row justify-content-center form-bg-image"
         data-background-lg="../../assets/img/illustrations/signin.svg"
@@ -19,19 +19,19 @@
             <div class="text-center text-md-center mb-4 mt-md-0">
               <h1 class="mb-0 h3">登入 VB你個好東東</h1>
             </div>
-            <form action="#" class="mt-4">
               <!-- Form -->
               <div class="form-group mb-4">
                 <label for="email">帳號</label>
                 <div class="input-group">
                   <span class="input-group-text" id="basic-addon1">
-                    <v-icon large>mdi-email</v-icon>
+                    <v-icon large>mdi-account</v-icon>
                   </span>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
-                    placeholder="example@company.com"
-                    id="email"
+                    placeholder="Account"
+                    id="account"
+                    v-model="account"
                     autofocus
                     required
                   />
@@ -51,6 +51,7 @@
                       placeholder="Password"
                       class="form-control"
                       id="password"
+                      v-model="password"
                       required
                     />
                   </div>
@@ -77,10 +78,9 @@
                   </div>
                 </div>
               </div>
-              <div class="d-grid">
-                <button type="submit" class="btn btn-gray-800">登入</button>
+              <div class="d-grid text-white">
+                <button  class="btn btn-gray-800" @click="submit">登入</button>
               </div>
-            </form>
 
             <div class="d-flex justify-content-center align-items-center mt-4">
               <span class="fw-normal">
@@ -97,7 +97,23 @@
 <script>
 export default {
   name: "LogIn",
+  data() {
+    return {
+      account:"",
+      password:""
+    }
 
-  components: {},
+  },
+  methods: {
+    submit:function(){
+      this.$http.post('https://dbaca83cc141.ngrok.io/api/login', {
+        account: this.account,
+        password: this.password
+      }).then((data) =>{
+        this.$store.commit('setToken',data.data.access_token)
+        this.$router.push("/")
+      });
+    }
+  },
 };
 </script>
