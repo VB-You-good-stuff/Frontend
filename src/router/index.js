@@ -9,6 +9,7 @@ import VBFuncIntro from "../views/VBStart/VBFuncIntro.vue";
 import Layout from "../layouts/Layout.vue";
 import forum_index from "../views/forum/index.vue";
 import article from "../views/forum/article.vue";
+import define from "../views/VBBasic/define.vue";
 
 Vue.use(VueRouter);
 
@@ -33,11 +34,11 @@ const routes = [
         name: "VBFuncIntro",
         component: VBFuncIntro,
       },
-      // {
-      //   path: "/Q&A",
-      //   name: "Q&A",
-      //   component: QandA,
-      // },
+      {
+        path: "/VBQ&A",
+        name: "VBQ&A",
+        component: VBQandA,
+      },
       {
         path: "/forum",
         name: "forum",
@@ -48,6 +49,11 @@ const routes = [
         name: "article",
         component: article,
       },
+      {
+        path: "/VBBasic/define",
+        name: "define",
+        component: define,
+      },
     ],
   },
   {
@@ -55,11 +61,7 @@ const routes = [
     name: "LogIn",
     component: LogIn,
   },
-  {
-    path: "/VBQ&A",
-    name: "VBQ&A",
-    component: VBQandA,
-  },
+
   {
     path: "/VBInstall",
     name: "VBInstall",

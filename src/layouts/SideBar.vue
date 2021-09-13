@@ -147,7 +147,6 @@
                 <v-icon color="#9ca3af">mdi-chevron-right </v-icon>
               </span>
             </span>
-
             <div
               class="multi-level collapse "
               role="list"
@@ -156,8 +155,36 @@
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
+                  <a class="nav-link" href="/VBBasic/define">
+                    <span class="sidebar-text">變數宣告</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
                   <a class="nav-link" href="/VBLang">
-                    <span class="sidebar-text">IF-ELSE</span>
+                    <span class="sidebar-text">資料型態</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/VBLang">
+                    <span class="sidebar-text">運算子</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/VBLang">
+                    <span class="sidebar-text">Debug及中斷點</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/VBLang">
+                    <span class="sidebar-text">解題技巧及思維</span>
                   </a>
                 </li>
               </ul>
@@ -190,7 +217,7 @@
               <ul class="flex-column nav">
                 <li class="nav-item">
                   <a class="nav-link" href="../../pages/examples/sign-in.html">
-                    <span class="sidebar-text">IF-ELSE</span>
+                    <span class="sidebar-text">網頁建置中</span>
                   </a>
                 </li>
               </ul>
