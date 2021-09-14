@@ -20,73 +20,77 @@
           >，這個就稱為資料型態，以下幫大家整理未來常用的資料型態
         </p>
       </div>
-      <div class="card border-0 shadow code_background">
-        <div class="card-body">
-          <p>
-            <font style="color:#039BE5">Dim</font>
-            <font style="color:white"> name</font>
-            <font style="color:#039BE5"> As</font>
-            <font style="color:#039BE5"> String</font>
-            <font style="color:#00C853"> //宣告變數name 是 字串</font><br />
-            <font style="color:#039BE5">Dim</font>
-            <font style="color:white"> number</font>
-            <font style="color:#039BE5"> As</font>
-            <font style="color:#039BE5"> Integer</font>
-            <font style="color:#00C853"> //宣告變數number 是 整數</font>
-          </p>
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3 fs-5">
-          當然，你也可以在宣告時就給予變數一個初始值，例如:
-        </p>
-      </div>
-      <div class="card border-0 shadow code_background">
-        <div class="card-body">
-          <p>
-            <font style="color:#039BE5">Dim</font>
-            <font style="color:white"> name</font>
-            <font style="color:#039BE5"> As</font>
-            <font style="color:#039BE5"> String</font>
-            <font style="color:white"> =</font>
-            <font style="color:orange"> "王小明"</font>
-            <font style="color:#00C853">
-              //宣告變數name 是 字串，初始值 = 王小明</font
-            ><br />
-          </p>
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0 mt-4">
-        <h1 class="h3">命名的方式?</h1>
-        <p class="mb-0 fs-5">
-          在幫變數取名字的時候，盡量取有意義的名字，這樣未來再回頭看你的程式碼的時候，才知道這個變數代表的意思是什麼，例如:
-        </p>
-      </div>
       <div class="card border-0 shadow ">
         <div class="card-body">
-          <table class="table">
+          <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th scope="col">需要宣告的變數</th>
-                <th class="table-danger" scope="col">錯誤示範</th>
-                <th class="table-success" scope="col">建議的命名方式</th>
+                <th scope="col">資料型態</th>
+                <th scope="col">說明</th>
+                <th scope="col">範例</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>數字</td>
-                <td class="table-danger">Z1、x2、y3...</td>
-                <td class="table-success">num1、num_first、number_1...</td>
+                <td>Boolean</td>
+                <td>布林值，只有兩種資料 True & False</td>
+                <td>True 、 False</td>
               </tr>
               <tr>
-                <td>姓名</td>
-                <td class="table-danger">ns、abc、n1...</td>
-                <td class="table-success">name1、name_1、user_name...</td>
+                <td>Char</td>
+                <td>字元，一次只能存一個字</td>
+                <td>A、P、P、L、E</td>
               </tr>
               <tr>
-                <td>電話</td>
-                <td class="table-danger">t、ph、aa...</td>
-                <td class="table-success">user_phone、phone_num...</td>
+                <td>String</td>
+                <td>字串，只要在""內的，不管是什麼符號或文字皆可存</td>
+                <td>banana、@#$%!$、잘했습니다</td>
+              </tr>
+              <tr>
+                <td>Short</td>
+                <td>短整數，-32,768 ~ 32,768</td>
+                <td>12,345、23,456</td>
+              </tr>
+              <tr>
+                <td>Integer</td>
+                <td>整數，-2,147,483,648 ~ 2,147,483,647</td>
+                <td>1,234,567、4,567,890</td>
+              </tr>
+              <tr>
+                <td>Long</td>
+                <td>
+                  長整數，-9,233,372,036,854,775,808 ~ 9,233,372,036,854,775,807
+                </td>
+                <td>123,456,789、4,656,789,456</td>
+              </tr>
+              <tr>
+                <td>Single</td>
+                <td>
+                  單精度浮點數
+                </td>
+                <td>-1.254,687,731、432.568,472</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td>
+                  倍精度浮點數，可以儲存小數點後更多位
+                </td>
+                <td>-1.254,687,731,785,655,555、432.568,472,858,475,322</td>
+              </tr>
+              <tr>
+                <td>Date</td>
+                <td>
+                  日期與時間，日期標示法為 #MM/DD/YYYY#，時間標示法為 #tt:mm:ss
+                  AM#、#tt:mm:ss PM#
+                </td>
+                <td>#12/25/2021#、#03:30:59 AM#、#05/23/2020 06:13:48 AM#</td>
+              </tr>
+              <tr>
+                <td>Object</td>
+                <td>
+                  物件，可以儲存任何型態
+                </td>
+                <td>true、Button、123</td>
               </tr>
             </tbody>
           </table>
@@ -100,38 +104,15 @@
       </div>
       <div class="card border-0 shadow practice_background ">
         <div class="card-body">
-          <p class="fs-5 bold mb-0">第一題</p>
+          <p class="fs-5 bold mb-0">試著宣告出下列所有變數</p>
           <div class="code_background">
             <p>
-              <font style="color:#039BE5">Dim</font>
-              <font style="color:white"> X</font>
-              <font style="color:#039BE5"> As</font>
-              <font style="color:#039BE5"> Integer</font>
-              <font style="color:white"> =</font>
-              <font style="color:#CCFF90"> 2</font><br />
-              <font style="color:white">X = X + </font>
-              <font style="color:#CCFF90"> 3 </font>
-              <font style="color:#00C853"> // &lArr; 變數X的值為何?</font><br />
-              <font style="color:white">X = X + </font>
-              <font style="color:#CCFF90"> 6 </font>
-              <font style="color:#00C853"> // &lArr; 現在變數X的值為何?</font
+              <font style="color:#00C853"> 1. 變數名為car的字串</font><br />
+              <font style="color:#00C853">
+                2. 變數名為computer的整數，值為132231</font
               ><br />
-            </p>
-          </div>
-          <p class="fs-5 bold mb-0">第二題</p>
-          <div class="code_background">
-            <p>
-              <font style="color:#039BE5">Dim</font>
-              <font style="color:white"> name</font>
-              <font style="color:#039BE5"> As String</font><br />
-
-              <font style="color:white">name = </font
-              ><font style="color:orange"> "abc"</font><br />
-              <font style="color:white">name = </font
-              ><font style="color:orange"> "王大大"</font><br />
-              <font style="color:white">name = </font
-              ><font style="color:orange"> "VB好好玩"</font><br />
-              <font style="color:#00C853"> // 現在變數name的值為何?</font><br />
+              <font style="color:#00C853"> 3. 一個值為false的變數done</font
+              ><br />
             </p>
           </div>
         </div>
