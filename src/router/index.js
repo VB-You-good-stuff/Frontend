@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 // import Home from "../views/Home.vue";
-import LogIn from "../views/pages/LogIn.vue";
+import logIn from "../views/pages/LogIn.vue";
 import VBQandA from "../views/VBQandA/VBQandA.vue";
 import VBInstall from "../views/VBInstall/VBInstall.vue";
 import VBStart from "../views/VBStart/VBStart.vue";
@@ -11,6 +11,7 @@ import forum_index from "../views/forum/index.vue";
 import article from "../views/forum/article.vue";
 import define from "../views/VBBasic/define.vue";
 import dataType from "../views/VBBasic/dataType.vue";
+import operator from "../views/VBBasic/operator.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -59,12 +60,17 @@ const routes = [
         name: "dataType",
         component: dataType,
       },
+      {
+        path: "/VBBasic/operator",
+        name: "operator",
+        component: operator,
+      },
     ],
   },
   {
     path: "/logIn",
-    name: "LogIn",
-    component: LogIn,
+    name: "logIn",
+    component: logIn,
   },
 ];
 

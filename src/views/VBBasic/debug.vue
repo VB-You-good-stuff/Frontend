@@ -3,9 +3,9 @@
     <div class="py-4">
       <div class="d-flex justify-content-between w-100 flex-wrap">
         <div class="mb-3 mb-lg-0">
-          <h1 class="display-1 bold">資料型態</h1>
+          <h1 class="display-1 bold">Debug及中斷點</h1>
           <p class="mb-0 h4">
-            Visual Basic 的資料型態說明
+            Debug的技巧與中斷點使用的方法說明
           </p>
         </div>
       </div>

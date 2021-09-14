@@ -4,13 +4,17 @@
       <a class="navbar-brand me-lg-5" href="../../index.html">
         <img
           class="navbar-brand-dark"
-          src="../assets/img/brand/light.svg"
-          alt="Volt logo"
+          src="../assets/logo.svg"
+          height="40"
+          width="40"
+          alt="VB Logo"
         />
         <img
           class="navbar-brand-light"
-          src="../assets/img/brand/dark.svg"
-          alt="Volt logo"
+          src="../assets/logo.svg"
+          height="40"
+          width="40"
+          alt="VB Logo"
         />
       </a>
       <div class="d-flex align-items-center">
@@ -170,9 +174,9 @@
               </ul>
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/VBLang">
+                  <router-link to="/VBBasic/operator" class="nav-link">
                     <span class="sidebar-text">運算子</span>
-                  </a>
+                  </router-link>
                 </li>
               </ul>
               <ul class="flex-column nav">
@@ -262,16 +266,16 @@ export default {
     toVBDoc() {
       this.$router.push({ name: "VBLang", params: { userId: 1 } });
     },
-    close(){
-      document.getElementById("close_button").click()
-    }
+    close() {
+      document.getElementById("close_button").click();
+    },
   },
   watch: {
-    '$route' () {
-      if(document.documentElement.scrollWidth<=750){
-        this.close()
+    $route() {
+      if (document.documentElement.scrollWidth <= 1000) {
+        this.close();
       }
-    }
+    },
   },
 };
 </script>
