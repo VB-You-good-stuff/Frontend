@@ -66,22 +66,6 @@ const routes = [
     name: "LogIn",
     component: LogIn,
   },
-
-  {
-    path: "/VBInstall",
-    name: "VBInstall",
-    component: VBInstall,
-  },
-  {
-    path: "/VBStart",
-    name: "VBStart",
-    component: VBStart,
-  },
-  {
-    path: "/VBFuncIntro",
-    name: "VBFuncIntro",
-    component: VBFuncIntro,
-  },
 ];
 
 const router = new VueRouter({

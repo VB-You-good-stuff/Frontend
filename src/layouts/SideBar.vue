@@ -70,6 +70,7 @@
           </div>
           <div class="collapse-close d-md-none">
             <a
+              id="close_button"
               href="#sidebarMenu"
               data-bs-toggle="collapse"
               data-bs-target="#sidebarMenu"
@@ -195,7 +196,7 @@
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
-              data-bs-target="#submenu-pages"
+              data-bs-target="#submenu-pages1"
             >
               <span>
                 <span class="sidebar-icon">
@@ -211,7 +212,7 @@
             <div
               class="multi-level collapse "
               role="list"
-              id="submenu-pages"
+              id="submenu-pages1"
               aria-expanded="false"
             >
               <ul class="flex-column nav">
@@ -261,6 +262,16 @@ export default {
     toVBDoc() {
       this.$router.push({ name: "VBLang", params: { userId: 1 } });
     },
+    close(){
+      document.getElementById("close_button").click()
+    }
+  },
+  watch: {
+    '$route' () {
+      if(document.documentElement.scrollWidth<=750){
+        this.close()
+      }
+    }
   },
 };
 </script>
