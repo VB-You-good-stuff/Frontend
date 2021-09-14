@@ -94,7 +94,7 @@
         </div>
         <ul class="nav flex-column pt-3 pt-md-0">
           <li class="nav-item">
-            <a href="/about" class="nav-link d-flex align-items-center">
+            <router-link to="/about" class="nav-link d-flex align-items-center">
               <span class="sidebar-icon">
                 <img
                   src="../assets/logo.svg"
@@ -104,7 +104,7 @@
                 />
               </span>
               <span class="mt-1 ms-1 sidebar-text">VB 你個好東東</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/VBInstall" class="nav-link">
@@ -123,12 +123,12 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <a href="/VBFuncIntro" class="nav-link">
+            <router-link to="/VBFuncIntro" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-book </v-icon>
               </span>
               <span class="sidebar-text">VB 功能概述</span>
-            </a>
+            </router-link>
           </li>
 
           <li class="nav-item">
@@ -155,16 +155,16 @@
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/VBBasic/define">
+                  <router-link to="/VBBasic/define" class="nav-link">
                     <span class="sidebar-text">變數宣告</span>
-                  </a>
+                  </router-link>
                 </li>
               </ul>
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/VBLang">
+                  <router-link to="/VBBasic/dataType" class="nav-link">
                     <span class="sidebar-text">資料型態</span>
-                  </a>
+                  </router-link>
                 </li>
               </ul>
               <ul class="flex-column nav">
@@ -225,12 +225,12 @@
           </li>
 
           <li class="nav-item ">
-            <a href="/VBQ&A" class="nav-link">
+            <router-link to="/VBQ&A" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-chat-question</v-icon>
               </span>
               <span class="sidebar-text">常見問題</span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/forum" class="nav-link">
@@ -242,13 +242,13 @@
           </li>
 
           <li class="nav-item ">
-            <a href="../../pages/settings.html" class="nav-link">
+            <router-link to="../../pages/settings.html" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-cog</v-icon>
               </span>
 
               <span class="sidebar-text">Settings</span>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>

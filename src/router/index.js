@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.vue";
 import forum_index from "../views/forum/index.vue";
 import article from "../views/forum/article.vue";
 import define from "../views/VBBasic/define.vue";
-
+import dataType from "../views/VBBasic/dataType.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -53,6 +53,11 @@ const routes = [
         path: "/VBBasic/define",
         name: "define",
         component: define,
+      },
+      {
+        path: "/VBBasic/dataType",
+        name: "dataType",
+        component: dataType,
       },
     ],
   },
