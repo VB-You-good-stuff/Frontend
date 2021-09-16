@@ -14,6 +14,7 @@ import dataType from "../views/VBBasic/dataType.vue";
 import operator from "../views/VBBasic/operator.vue";
 import debug from "../views/VBBasic/debug.vue";
 import pratice from "../views/VBBasic/pratice.vue";
+import about from "../views/pages/about.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
     name: "Layout",
     component: Layout,
     children: [
+      {
+        path: "/about",
+        name: "/about",
+        component: about,
+      },
       {
         path: "/VBInstall",
         name: "VBInstall",

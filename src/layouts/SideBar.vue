@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
-      <a class="navbar-brand me-lg-5" href="../../index.html">
+      <router-link to="/about">
         <img
           class="navbar-brand-dark"
           src="../assets/logo.svg"
@@ -16,7 +16,7 @@
           width="40"
           alt="VB Logo"
         />
-      </a>
+      </router-link>
       <div class="d-flex align-items-center">
         <button
           class="navbar-toggler d-lg-none collapsed"
