@@ -106,7 +106,7 @@ export default {
   },
   methods: {
     submit:function(){
-      this.$http.post('https://dbaca83cc141.ngrok.io/api/login', {
+      this.$http.post('http://163.17.135.174:8082/api/login', {
         account: this.account,
         password: this.password
       }).then((data) =>{
