@@ -12,6 +12,8 @@ import article from "../views/forum/article.vue";
 import define from "../views/VBBasic/define.vue";
 import dataType from "../views/VBBasic/dataType.vue";
 import operator from "../views/VBBasic/operator.vue";
+import debug from "../views/VBBasic/debug.vue";
+import pratice from "../views/VBBasic/pratice.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -65,6 +67,16 @@ const routes = [
         name: "operator",
         component: operator,
       },
+      {
+        path: "/VBBasic/debug",
+        name: "debug",
+        component: debug,
+      },
+      {
+        path: "/VBBasic/pratice",
+        name: "pratice",
+        component: pratice,
+      },
     ],
   },
   {
@@ -78,6 +90,9 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;

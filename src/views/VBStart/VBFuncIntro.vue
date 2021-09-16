@@ -104,20 +104,38 @@
             class="img-fluid"
           />
         </div>
+
+        <div class="mb-3 mb-lg-0">
+          <p class="mb-0 mt-3 fs-5">
+            若想要<font class="text-success bold">停止程式執行</font
+            >，可以點擊<font class="text-danger bold"> 紅色正方形</font
+            >，即可停止執行
+          </p>
+        </div>
+        <div class="card border-0 shadow">
+          <div class="card-body">
+            <img
+              src="../../assets/img/VBImg/VB_FuncIntro_6.png"
+              class="img-fluid"
+            />
+          </div>
+        </div>
       </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mb-0 mt-3 fs-5">
-          若想要<font class="text-success bold">停止程式執行</font
-          >，可以點擊<font class="text-danger bold"> 紅色正方形</font
-          >，即可停止執行
+      <div class="mb-3 mb-lg-0 mt-4">
+        <h1 class="h3">小練習</h1>
+        <p class="mb-0 fs-5">
+          試著做做看下面的練習題吧!
         </p>
       </div>
-      <div class="card border-0 shadow">
+      <div class="card border-0 shadow practice_background ">
         <div class="card-body">
-          <img
-            src="../../assets/img/VBImg/VB_FuncIntro_6.png"
-            class="img-fluid"
-          />
+          <div class="code_background">
+            <p>
+              <font style="color:#00C853">
+                新增一個專案，畫面區新增Button，並將Button上的文字改為自己的學號+姓名</font
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>

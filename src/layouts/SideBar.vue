@@ -40,7 +40,7 @@
         <div
           class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4"
         >
-          <div class="d-flex align-items-center">
+          <!-- <div class="d-flex align-items-center">
             <div class="avatar-lg me-4">
               <img
                 src="../assets/img/team/profile-picture-3.jpg"
@@ -71,7 +71,7 @@
                 Sign Out
               </a>
             </div>
-          </div>
+          </div> -->
           <div class="collapse-close d-md-none">
             <a
               id="close_button"
@@ -181,9 +181,16 @@
               </ul>
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/VBLang">
-                    <span class="sidebar-text">Debug及中斷點</span>
-                  </a>
+                  <router-link to="/VBBasic/pratice" class="nav-link">
+                    <span class="sidebar-text">綜合練習</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBBasic/debug" class="nav-link">
+                    <span class="sidebar-text">Debug</span>
+                  </router-link>
                 </li>
               </ul>
               <ul class="flex-column nav">
@@ -196,7 +203,7 @@
             </div>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
@@ -227,7 +234,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
 
           <li class="nav-item ">
             <router-link to="/VBQ&A" class="nav-link">
@@ -237,7 +244,7 @@
               <span class="sidebar-text">常見問題</span>
             </router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link to="/forum" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
@@ -254,7 +261,7 @@
 
               <span class="sidebar-text">Settings</span>
             </router-link>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>

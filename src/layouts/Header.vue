@@ -42,7 +42,7 @@
         <!-- Navbar links -->
         <ul class="navbar-nav align-items-center">
           <li class="nav-item dropdown">
-            <a
+            <!-- <a
               class="nav-link text-dark notification-bell unread dropdown-toggle"
               data-unread-notifications="true"
               href="#"
@@ -61,24 +61,24 @@
                   d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
                 ></path>
               </svg>
-            </a>
+            </a> -->
             <div
               class="dropdown-menu dropdown-menu-lg dropdown-menu-center mt-2 py-0"
             >
-              <div class="list-group list-group-flush">
+              <!-- <div class="list-group list-group-flush">
                 <a
                   href="#"
                   class="text-center text-primary fw-bold border-bottom border-light py-3"
                   >Notifications</a
-                >
-                <a
+                > -->
+              <!-- <a
                   href="#"
                   class="list-group-item list-group-item-action border-bottom"
                 >
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img
+                    <div class="col-auto"> -->
+              <!-- Avatar -->
+              <!-- <img
                         alt="Image placeholder"
                         src="../assets/img/team/profile-picture-1.jpg"
                         class="avatar-md rounded"
@@ -101,15 +101,15 @@
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </a> -->
+              <!-- <a
                   href="#"
                   class="list-group-item list-group-item-action border-bottom"
                 >
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img
+                    <div class="col-auto"> -->
+              <!-- Avatar -->
+              <!-- <img
                         alt="Image placeholder"
                         src="../assets/img/team/profile-picture-2.jpg"
                         class="avatar-md rounded"
@@ -131,15 +131,15 @@
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </a> -->
+              <!-- <a
                   href="#"
                   class="list-group-item list-group-item-action border-bottom"
                 >
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img
+                    <div class="col-auto"> -->
+              <!-- Avatar -->
+              <!-- <img
                         alt="Image placeholder"
                         src="../assets/img/team/profile-picture-3.jpg"
                         class="avatar-md rounded"
@@ -161,15 +161,15 @@
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </a> -->
+              <!-- <a
                   href="#"
                   class="list-group-item list-group-item-action border-bottom"
                 >
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img
+                    <div class="col-auto"> -->
+              <!-- Avatar -->
+              <!-- <img
                         alt="Image placeholder"
                         src="../assets/img/team/profile-picture-4.jpg"
                         class="avatar-md rounded"
@@ -192,15 +192,15 @@
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </a> -->
+              <!-- <a
                   href="#"
                   class="list-group-item list-group-item-action border-bottom"
                 >
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <img
+                    <div class="col-auto"> -->
+              <!-- Avatar -->
+              <!-- <img
                         alt="Image placeholder"
                         src="../assets/img/team/profile-picture-5.jpg"
                         class="avatar-md rounded"
@@ -223,8 +223,8 @@
                       </p>
                     </div>
                   </div>
-                </a>
-                <a
+                </a> -->
+              <!-- <a
                   href="#"
                   class="dropdown-item text-center fw-bold rounded-bottom py-3"
                 >
@@ -242,12 +242,12 @@
                     ></path>
                   </svg>
                   View all
-                </a>
-              </div>
+                </a> -->
+              <!-- </div> -->
             </div>
           </li>
           <li class="nav-item dropdown ms-lg-3">
-            <a
+            <!-- <a
               class="nav-link dropdown-toggle pt-1 px-0"
               href="#"
               role="button"
@@ -269,8 +269,8 @@
                   </span>
                 </div>
               </div>
-            </a>
-            <router-link to="/logIn" class="nav-link pt-1 px-0" v-else>
+            </a> -->
+            <!-- <router-link to="/logIn" class="nav-link pt-1 px-0" v-else>
               <div class="media d-flex align-items-center">
                 <img
                   class="avatar rounded-circle"
@@ -285,9 +285,9 @@
                   </span>
                 </div>
               </div>
-            </router-link>
+            </router-link> -->
 
-            <div
+            <!-- <div
               class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1"
             >
               <a class="dropdown-item d-flex align-items-center" href="#">
@@ -304,8 +304,8 @@
                   ></path>
                 </svg>
                 My Profile
-              </a>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              </a> -->
+            <!-- <a class="dropdown-item d-flex align-items-center" href="#">
                 <svg
                   class="dropdown-icon text-gray-400 me-2"
                   fill="currentColor"
@@ -334,8 +334,8 @@
                   ></path>
                 </svg>
                 Messages
-              </a>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              </a> -->
+            <!-- <a class="dropdown-item d-flex align-items-center" href="#">
                 <svg
                   class="dropdown-icon text-gray-400 me-2"
                   fill="currentColor"
@@ -349,8 +349,8 @@
                   ></path>
                 </svg>
                 Support
-              </a>
-              <div role="separator" class="dropdown-divider my-1"></div>
+              </a> -->
+            <!-- <div role="separator" class="dropdown-divider my-1"></div>
               <button
                 class="dropdown-item d-flex align-items-center"
                 @click="logout"
@@ -370,8 +370,8 @@
                   ></path>
                 </svg>
                 Logout
-              </button>
-            </div>
+              </button> -->
+            <!-- </div> -->
           </li>
         </ul>
       </div>
