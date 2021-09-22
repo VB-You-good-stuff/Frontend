@@ -281,7 +281,7 @@
           </table>
         </div>
       </div>
-      <div class="mb-3 mb-lg-0 mt-4">
+      <!-- <div class="mb-3 mb-lg-0 mt-4">
         <h1 class="h3">小練習</h1>
         <p class="mb-0 fs-5">
           試著做做看下面的練習題吧!
@@ -301,7 +301,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </v-row>
 </template>

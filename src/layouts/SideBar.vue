@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
-      <router-link to="/about">
+      <router-link to="/home">
         <img
           class="navbar-brand-dark"
           src="../assets/logo.svg"
@@ -99,7 +99,7 @@
         </div>
         <ul class="nav flex-column pt-3 pt-md-0">
           <li class="nav-item">
-            <router-link to="/about" class="nav-link d-flex align-items-center">
+            <router-link to="/home" class="nav-link d-flex align-items-center">
               <span class="sidebar-icon">
                 <img
                   src="../assets/logo.svg"
@@ -125,6 +125,14 @@
                 <v-icon color="#9ca3af">mdi-folder-plus </v-icon>
               </span>
               <span class="sidebar-text">VB 新增專案</span>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/VBFirstWork" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-bag-personal </v-icon>
+              </span>
+              <span class="sidebar-text">第一個程式</span>
             </router-link>
           </li>
           <li class="nav-item">
@@ -193,13 +201,13 @@
                   </router-link>
                 </li>
               </ul>
-              <ul class="flex-column nav">
+              <!-- <ul class="flex-column nav">
                 <li class="nav-item">
                   <a class="nav-link" href="/VBLang">
                     <span class="sidebar-text">解題技巧及思維</span>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </li>
 
@@ -273,8 +281,16 @@ export default {
     toVBDoc() {
       this.$router.push({ name: "VBLang", params: { userId: 1 } });
     },
+
     close() {
-      document.getElementById("close_button").click();
+      if (
+        document
+          .getElementById("sidebarMenu")
+          .className.split(" ")
+          .filter((a) => a == "show").length == 1
+      ) {
+        document.getElementById("close_button").click();
+      }
     },
   },
   watch: {

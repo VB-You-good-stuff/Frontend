@@ -172,6 +172,17 @@
           />
         </div>
       </div>
+
+      <div class="mb-3 mb-lg-0 mt-4">
+        <h1 class="h3">安裝問題</h1>
+        <p class="mb-0 mt-3 fs-5">
+          若發現安裝失敗可以參照<router-link to="/VBQ&A" class="h5 link-info"
+            >這個頁面<v-icon color="#2361D6"
+              >mdi-open-in-new</v-icon
+            ></router-link
+          >
+        </p>
+      </div>
     </div>
   </v-row>
 </template>

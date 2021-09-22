@@ -14,7 +14,8 @@ import dataType from "../views/VBBasic/dataType.vue";
 import operator from "../views/VBBasic/operator.vue";
 import debug from "../views/VBBasic/debug.vue";
 import pratice from "../views/VBBasic/pratice.vue";
-import about from "../views/pages/about.vue";
+import home from "../views/pages/home.vue";
+import VBFirstWork from "../views/VBBasic/firstWork.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -22,16 +23,22 @@ const routes = [
     path: "/",
     name: "Layout",
     component: Layout,
+    redirect: "/home",
     children: [
       {
-        path: "/about",
-        name: "/about",
-        component: about,
+        path: "/home",
+        name: "/home",
+        component: home,
       },
       {
         path: "/VBInstall",
         name: "VBInstall",
         component: VBInstall,
+      },
+      {
+        path: "/VBFirstWork",
+        name: "VBFirstWork",
+        component: VBFirstWork,
       },
       {
         path: "/VBStart",
@@ -85,6 +92,7 @@ const routes = [
       },
     ],
   },
+
   {
     path: "/logIn",
     name: "logIn",
