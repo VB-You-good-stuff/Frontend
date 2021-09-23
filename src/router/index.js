@@ -17,6 +17,7 @@ import pratice from "../views/VBBasic/pratice.vue";
 import home from "../views/pages/home.vue";
 import VBFirstWork from "../views/VBBasic/firstWork.vue";
 import testingSkill from "../views/VBBasic/testSkill.vue";
+import breakpoint from "../views/VBBasic/breakpoint.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -26,11 +27,6 @@ const routes = [
     component: Layout,
     redirect: "/home",
     children: [
-      {
-        path: "/home",
-        name: "/home",
-        component: home,
-      },
       {
         path: "/VBInstall",
         name: "VBInstall",
@@ -96,7 +92,17 @@ const routes = [
         name: "testingSkill",
         component: testingSkill,
       },
+      {
+        path: "/VBBasic/breakpoint",
+        name: "breakpoint",
+        component: breakpoint,
+      },
     ],
+  },
+  {
+    path: "/home",
+    name: "/home",
+    component: home,
   },
 
   {

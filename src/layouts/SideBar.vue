@@ -208,6 +208,13 @@
                   </router-link>
                 </li>
               </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBBasic/breakpoint" class="nav-link">
+                    <span class="sidebar-text">中斷點</span>
+                  </router-link>
+                </li>
+              </ul>
             </div>
           </li>
 
