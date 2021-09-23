@@ -16,6 +16,7 @@ import debug from "../views/VBBasic/debug.vue";
 import pratice from "../views/VBBasic/pratice.vue";
 import home from "../views/pages/home.vue";
 import VBFirstWork from "../views/VBBasic/firstWork.vue";
+import testingSkill from "../views/VBBasic/testSkill.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -89,6 +90,11 @@ const routes = [
         path: "/VBBasic/pratice",
         name: "pratice",
         component: pratice,
+      },
+      {
+        path: "/VBBasic/testingSkill",
+        name: "testingSkill",
+        component: testingSkill,
       },
     ],
   },

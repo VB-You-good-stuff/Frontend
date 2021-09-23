@@ -168,6 +168,13 @@
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
+                  <router-link to="/VBBasic/testingSkill" class="nav-link">
+                    <span class="sidebar-text">解題技巧及思維</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
                   <router-link to="/VBBasic/define" class="nav-link">
                     <span class="sidebar-text">變數宣告</span>
                   </router-link>
@@ -201,13 +208,6 @@
                   </router-link>
                 </li>
               </ul>
-              <!-- <ul class="flex-column nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/VBLang">
-                    <span class="sidebar-text">解題技巧及思維</span>
-                  </a>
-                </li>
-              </ul> -->
             </div>
           </li>
 
