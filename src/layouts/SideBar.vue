@@ -128,6 +128,14 @@
             </router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/VBSave" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af"> mdi-content-save </v-icon>
+              </span>
+              <span class="sidebar-text">VB 儲存專案&壓縮</span>
+            </router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/VBFirstWork" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-bag-personal </v-icon>

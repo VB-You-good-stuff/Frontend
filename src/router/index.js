@@ -18,6 +18,7 @@ import home from "../views/pages/home.vue";
 import VBFirstWork from "../views/VBBasic/firstWork.vue";
 import testingSkill from "../views/VBBasic/testSkill.vue";
 import breakpoint from "../views/VBBasic/breakpoint.vue";
+import Zip from "../views/VBStart/Zip.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -96,6 +97,11 @@ const routes = [
         path: "/VBBasic/breakpoint",
         name: "breakpoint",
         component: breakpoint,
+      },
+      {
+        path: "/VBSave",
+        name: "Zip",
+        component: Zip,
       },
     ],
   },
