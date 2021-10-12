@@ -260,14 +260,14 @@
           </li> -->
 
           <li class="nav-item ">
-            <router-link to="/VBQ&A" class="nav-link">
+            <router-link to="/VBQA" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-chat-question</v-icon>
               </span>
               <span class="sidebar-text">常見問題</span>
             </router-link>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item" v-if="IsLogin">
             <router-link to="/forum" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
@@ -276,7 +276,7 @@
             </router-link>
           </li>
 
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
             <router-link to="../../pages/settings.html" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-cog</v-icon>
@@ -292,6 +292,7 @@
 </template>
 <script>
 export default {
+  props:["IsLogin"],
   methods: {
     toVBDoc() {
       this.$router.push({ name: "VBLang", params: { userId: 1 } });

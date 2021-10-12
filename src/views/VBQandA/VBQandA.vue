@@ -114,7 +114,7 @@
 </template>
 <script>
 export default {
-  name: "VBQ&A",
+  name: "VBQA",
 
   components: {},
 };

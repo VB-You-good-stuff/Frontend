@@ -1,5 +1,10 @@
 <template>
     <div>
+        <div class="text-left">
+            <router-link to="forum/create">
+                <button type="button" class="btn btn-success">發文</button>
+            </router-link>
+        </div>
         <div class="card mt-5">
             <table class="table table-striped table-hover">
                 <thead class="forum_header">
@@ -10,19 +15,12 @@
                     <th >最後回覆時間</th>
                 </thead>
                 <tbody class="forum_body">
-                    <tr class="article">
+                    <tr class="article" v-for="article in articles" :key="article.id">
                         <td>提問</td>
-                        <router-link to="article" class="title" tag="td">請問這段程式碼出了什麼問題</router-link>
-                        <td class="user">李柏賢</td>
-                        <td class="create_time">今天 12:00</td>
-                        <td>今天 12:20</td>
-                    </tr>
-                    <tr class="article">
-                        <td>心得</td>
-                        <td class="title">關於中斷點的使用</td>
-                        <td class="user">李柏賢</td>
-                        <td class="create_time">今天 11:00</td>
-                        <td>今天 12:10</td>
+                        <router-link :to="`forum/article/${article.id}`" class="title" tag="td">{{article.article}}</router-link>
+                        <td class="user">{{article.name}}</td>
+                        <td class="create_time">{{time_format(article.created_at)}}</td>
+                        <td>{{time_format(article.last_content_time)}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -31,7 +29,34 @@
 </template>
 <script>
 export default {
-    
+    data() {
+        return {
+            articles:[]
+        }
+    },
+    created(){
+        if (this.$store.getters.getToken == "") {
+            this.$router.push("/")
+        }
+        const self = this;
+        this.$http.get('http://163.17.135.174:8082/api/guestbooks',{headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
+        .then((data) =>{
+            self.articles = data.data
+            console.log(self.articles)
+        });
+
+    },
+    methods: {
+        time_format:function (dateString) {
+            const date = new Date(dateString)
+            const now = new Date()
+            if (date.toLocaleDateString() == now.toLocaleDateString()) {
+                return `今天 ${date.toLocaleTimeString()}`;
+            }else{
+                return date.toLocaleString();
+            }
+        }
+    },
 }
 </script>
 <style scoped>
@@ -68,5 +93,6 @@ export default {
     table{
         --bs-table-hover-bg: #FFFFDD;
     }
+    
     
 </style>

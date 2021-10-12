@@ -61,7 +61,7 @@
                   class="d-flex justify-content-between align-items-top mb-4"
                 >
                   <div class="form-check">
-                    <input
+                    <!-- <input
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -69,7 +69,7 @@
                     />
                     <label class="form-check-label mb-0" for="remember">
                       記住我
-                    </label>
+                    </label> -->
                   </div>
                   <div>
                     <a href="./forgot-password.html" class="small text-right"
@@ -85,7 +85,7 @@
             <div class="d-flex justify-content-center align-items-center mt-4">
               <span class="fw-normal">
                 還沒有帳號?
-                <a href="./sign-up.html" class="fw-bold">現在註冊</a>
+                <router-link to="register">現在註冊</router-link>
               </span>
             </div>
           </div>
@@ -111,7 +111,9 @@ export default {
         password: this.password
       }).then((data) =>{
         this.$store.commit('setToken',data.data.access_token)
-        this.$router.push("/")
+        this.$router.push("/forum")
+      }).catch(function(error) {
+          alert(error.response.data.error)
       });
     }
   },

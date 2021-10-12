@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 // import Home from "../views/Home.vue";
 import logIn from "../views/pages/LogIn.vue";
+import register from "../views/pages/register.vue";
 import VBQandA from "../views/VBQandA/VBQandA.vue";
 import VBInstall from "../views/VBInstall/VBInstall.vue";
 import VBStart from "../views/VBStart/VBStart.vue";
@@ -9,6 +10,7 @@ import VBFuncIntro from "../views/VBStart/VBFuncIntro.vue";
 import Layout from "../layouts/Layout.vue";
 import forum_index from "../views/forum/index.vue";
 import article from "../views/forum/article.vue";
+import article_create from "../views/forum/create.vue";
 import define from "../views/VBBasic/define.vue";
 import dataType from "../views/VBBasic/dataType.vue";
 import operator from "../views/VBBasic/operator.vue";
@@ -19,6 +21,7 @@ import VBFirstWork from "../views/VBBasic/firstWork.vue";
 import testingSkill from "../views/VBBasic/testSkill.vue";
 import breakpoint from "../views/VBBasic/breakpoint.vue";
 import Zip from "../views/VBStart/Zip.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -49,8 +52,8 @@ const routes = [
         component: VBFuncIntro,
       },
       {
-        path: "/VBQ&A",
-        name: "VBQ&A",
+        path: "/VBQA",
+        name: "VBQA",
         component: VBQandA,
       },
       {
@@ -59,10 +62,18 @@ const routes = [
         component: forum_index,
       },
       {
-        path: "/article",
+        path: "/forum/article/:id",
         name: "article",
         component: article,
       },
+      {
+        path: "/forum/create",
+        name: "article_create",
+        component: article_create,
+      },
+
+
+      
       {
         path: "/VBBasic/define",
         name: "define",
@@ -116,6 +127,12 @@ const routes = [
     name: "logIn",
     component: logIn,
   },
+  {
+    path: "/register",
+    name: "register",
+    component: register,
+  },
+  
 ];
 
 const router = new VueRouter({

@@ -17,7 +17,10 @@ import "notyf/notyf.min.css";
 import "notyf";
 //import "bootstrap/dist/css/bootstrap.min.css" 
 
+
+
 Vue.use(VueAxios,axios)
+
 
 Vue.config.productionTip = false;
 

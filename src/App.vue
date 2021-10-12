@@ -1,18 +1,33 @@
 <template>
-  <div>
-    <router-view />
-  </div>
+	<div>
+		<router-view v-if="isRouterAlive"/>
+	</div>
 </template>
 
 <script>
 export default {
-  name: "App",
-
-  data: () => ({
-    //
-  }),
+	name: "App",
+	provide(){
+		return{
+			reload:this.reload
+		}
+	},
+	data: () => ({
+		isRouterAlive:true
+	}),
+	methods:{
+		reload(){
+			this.isRouterAlive = false;
+			this.$nextTick(function () {
+			this.isRouterAlive = true;
+			});
+		}
+	},
 };
 </script>
 <style>
 @import "./assets/css/volt.css";
+*{
+font-family: 微軟正黑體;
+}
 </style>

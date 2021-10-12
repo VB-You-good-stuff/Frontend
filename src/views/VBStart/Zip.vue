@@ -43,8 +43,8 @@
         <p class="mb-0 mt-3 fs-5">
           這樣就可在<font class="text-success bold">指定位置找到你的專案</font
           >，交作業時，將<font class="text-success bold"
-            >這兩個檔案壓縮上傳即可完成新增專案</font
-          >囉!
+            >這兩個檔案壓縮上傳即可!</font
+          >
         </p>
       </div>
 
