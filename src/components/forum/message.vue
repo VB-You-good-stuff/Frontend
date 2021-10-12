@@ -4,7 +4,7 @@
             {{message.name }}:{{message.reply}}
             <hr>
         </div>
-        <div class="input-group input-group-sm">
+        <div class="input-group input-group-sm" v-if="IsLogin">
             <span class="input-group-text" id="inputGroup-sizing-sm">{{$store.getters.getUserData.name}}</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  v-model="new_message">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="cteate_message">留言</button>
@@ -13,7 +13,7 @@
 </template>
 <script>
 export default {
-    props:["floor","content_id"],
+    props:["floor","content_id","IsLogin"],
     data() {
         return {
             new_message:"",
@@ -40,7 +40,6 @@ export default {
         getmessages:function(){
             this.$http.get('http://163.17.135.174:8082/api/responds',{params: { id: this.content_id },headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
             .then((data) =>{
-                console.log(data)
                 this.messages = data.data
             });
         },

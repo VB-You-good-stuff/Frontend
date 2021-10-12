@@ -1,18 +1,18 @@
 <template>
     <div>
-        <div class="card mt-5" v-for="floor in article" :key="floor.floor">
+        <div class="card mt-5  mb-5" v-for="floor in contents" :key="floor.floor">
             <div class="card-header">
-                <h1 v-if="floor.floor == 1">請問這段程式碼出了什麼問題</h1>
+                <h1 v-if="floor.floor == 1">{{article.article}}</h1>
                 <span>{{floor.floor}}樓 </span>
                 <span>{{floor.name}}</span>
             </div>
             <div class="ProseMirror m-4" style="min-height:300px" v-html="floor.detail">
             </div>
             <div class="card-footer">
-				<message :floor="floor" :content_id="floor.id"/>
+              <message :floor="floor" :content_id="floor.id" :IsLogin="IsLogin"/>
             </div>
         </div>
-        <div class="card mt-5 mb-5">
+        <div class="card mb-5" v-if="IsLogin">
             <div class="card-header">
                 回覆問題
             </div>
@@ -30,6 +30,7 @@
 import Tiptap from '../../components/Tiptap.vue'
 import message from '../../components/forum/message.vue'
 export default {
+  props:["IsLogin"],
 	inject:['reload'],
     components: {
         Tiptap,
@@ -37,19 +38,24 @@ export default {
     },
     data() {
         return {
+            contents:null,
             article:null,
             content:"",
         }
     },
     created() {
         if (this.$store.getters.getToken == "") {
-            this.$router.push("/")
+            // this.$router.push("/")
         }
         const self = this;
         this.$http.get('http://163.17.135.174:8082/api/contents',{params: { id: this.$route.params.id },headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
         .then((data) =>{
-            self.article = data.data
-            console.log(self.article)
+            self.contents = data.data
+        });
+        this.$http.get(`http://163.17.135.174:8082/api/guestbooks/${this.$route.params.id}`,{headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
+        .then((data) =>{
+          
+          self.article = data.data[0]
         });
     },
     methods: {

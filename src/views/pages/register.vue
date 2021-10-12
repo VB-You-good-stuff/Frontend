@@ -136,7 +136,6 @@ export default {
             this.$store.commit('setToken',data.data.access_token)
             this.$router.push("/")
         }).catch(function(error) {
-            console.log(JSON.parse(error.response.data))
             const error_message = JSON.parse(error.response.data);
             for (const [, value] of Object.entries(error_message)) {
                 alert(value)

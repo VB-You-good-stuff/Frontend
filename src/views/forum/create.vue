@@ -58,8 +58,7 @@ export default {
         }
     },
     watch: {
-        content(value) {
-            console.log(value)
+        content() {
         },
     },
 }

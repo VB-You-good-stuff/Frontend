@@ -2,7 +2,7 @@
     <div>
         <div class="text-left">
             <router-link to="forum/create">
-                <button type="button" class="btn btn-success">發文</button>
+                <button type="button" class="btn btn-success" v-if="IsLogin">發文</button>
             </router-link>
         </div>
         <div class="card mt-5">
@@ -29,6 +29,7 @@
 </template>
 <script>
 export default {
+    props:["IsLogin"],
     data() {
         return {
             articles:[]
@@ -36,13 +37,12 @@ export default {
     },
     created(){
         if (this.$store.getters.getToken == "") {
-            this.$router.push("/")
+            // this.$router.push("/")
         }
         const self = this;
         this.$http.get('http://163.17.135.174:8082/api/guestbooks',{headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
         .then((data) =>{
             self.articles = data.data
-            console.log(self.articles)
         });
 
     },

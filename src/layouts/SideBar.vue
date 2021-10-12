@@ -267,7 +267,7 @@
               <span class="sidebar-text">常見問題</span>
             </router-link>
           </li>
-          <li class="nav-item" v-if="IsLogin">
+          <li class="nav-item" >
             <router-link to="/forum" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
