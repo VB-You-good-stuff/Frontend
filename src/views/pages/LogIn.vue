@@ -71,11 +71,11 @@
                       記住我
                     </label> -->
                   </div>
-                  <div>
+                  <!-- <div>
                     <a href="./forgot-password.html" class="small text-right"
                       >忘記密碼?</a
                     >
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="d-grid text-white">

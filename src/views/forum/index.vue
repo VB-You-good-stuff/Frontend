@@ -10,9 +10,9 @@
                 <thead class="forum_header">
                     <th>類別</th>
                     <th>標題</th>
-                    <th >發文者</th>
-                    <th >發文時間</th>
-                    <th >最後回覆時間</th>
+                    <th>發文者</th>
+                    <th>發文時間</th>
+                    <th>最後回覆時間</th>
                 </thead>
                 <tbody class="forum_body">
                     <tr class="article" v-for="article in articles" :key="article.id">
@@ -48,7 +48,7 @@ export default {
     },
     methods: {
         time_format:function (dateString) {
-            const date = new Date(dateString)
+            const date = new Date(dateString.replace(/-/g, "/"))
             const now = new Date()
             if (date.toLocaleDateString() == now.toLocaleDateString()) {
                 return `今天 ${date.toLocaleTimeString()}`;

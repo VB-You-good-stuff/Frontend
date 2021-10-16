@@ -8,7 +8,7 @@
                     <h1 class="mb-0 h3">註冊 VB你個好東東</h1>
                 </div>
                 <div class="form-group mb-4">
-                    <label for="email">帳號</label>
+                    <label for="email">帳號(學號)</label>
                     <div class="input-group">
                     <span class="input-group-text" id="basic-addon1">
                         <v-icon large>mdi-account</v-icon>
@@ -51,7 +51,7 @@
                             </span>
                             <input
                             type="name"
-                            placeholder="暱稱"
+                            placeholder="name"
                             class="form-control"
                             id="name"
                             v-model="name"
@@ -90,11 +90,11 @@
                         記住我
                         </label> -->
                     </div>
-                    <div>
+                    <!-- <div>
                         <a href="./forgot-password.html" class="small text-right"
                         >忘記密碼?</a
                         >
-                    </div>
+                    </div> -->
                 </div>
                 <div class="d-grid text-white">
                     <button  class="btn btn-gray-800" @click="submit">註冊</button>

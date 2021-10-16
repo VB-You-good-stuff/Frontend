@@ -1,6 +1,9 @@
 <template>
     <div>
         <div v-for="message in messages" :key="message.id">
+            <!-- <div style="float:right;cursor: pointer;" v-if="IsLogin&&owner(message.reply_account)">
+                <v-icon color="#ff0000" title="刪除" @click="delete_message">mdi-delete </v-icon>
+            </div> -->
             {{message.name }}:{{message.reply}}
             <hr>
         </div>
@@ -41,8 +44,24 @@ export default {
             this.$http.get('http://163.17.135.174:8082/api/responds',{params: { id: this.content_id },headers: { authorization: `Bearer ${this.$store.getters.getToken}`}})
             .then((data) =>{
                 this.messages = data.data
+                console.log(this.messages)
             });
         },
+		owner:function (owner_account){
+			const myaccount = this.$store.getters.getUserData.account;
+            console.log(owner_account)
+			if (owner_account == myaccount) {
+				return true
+			}else{
+				return false
+			}
+			
+		},
+		delete_message:function(){
+			if(confirm("確認刪除?")){
+				console.log(123)
+			}
+		}
     },
 }
 </script>

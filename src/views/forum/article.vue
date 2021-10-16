@@ -2,9 +2,13 @@
     <div>
         <div class="card mt-5  mb-5" v-for="floor in contents" :key="floor.floor">
             <div class="card-header">
-                <h1 v-if="floor.floor == 1">{{article.article}}</h1>
+				<!-- <div style="float:right;cursor: pointer;" v-if="IsLogin&&owner(floor.detail_account)">
+					<v-icon color="#ff0000" title="刪除" @click="delete_article(floor)">mdi-delete </v-icon>
+				</div> -->
+                <h1 v-if="floor.floor == 1">{{article!=null?article.article:""}}</h1>
                 <span>{{floor.floor}}樓 </span>
                 <span>{{floor.name}}</span>
+                
             </div>
             <div class="ProseMirror m-4" style="min-height:300px" v-html="floor.detail">
             </div>
@@ -30,7 +34,7 @@
 import Tiptap from '../../components/Tiptap.vue'
 import message from '../../components/forum/message.vue'
 export default {
-  props:["IsLogin"],
+	props:["IsLogin"],
 	inject:['reload'],
     components: {
         Tiptap,
@@ -72,9 +76,31 @@ export default {
 			});
 		},
 		update_content:function(content){
-            this.content = content;
-        }
-    },
+			this.content = content;
+		},
+		delete_article:function(article){
+			if (article.floor == 1) {
+				if(confirm("確認刪除此篇文章?")){
+					console.log(article)
+				}
+			}else{
+				if(confirm("確認刪除此回覆?")){
+					
+					console.log(article)
+				}
+			}
+			
+		},
+		owner:function (owner_account){
+			const myaccount = this.$store.getters.getUserData.account;
+			if (owner_account == myaccount) {
+				return true
+			}else{
+				return false
+			}
+			
+		}
+    }
 }
 </script>
 

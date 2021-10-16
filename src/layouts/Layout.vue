@@ -5,7 +5,7 @@
             <Header :user="user" :IsLogin="IsLogin" @logout="logout"/>
             <div class="container-fluid">
                 <v-fade-transition mode="out-in"> -->
-                    <router-view style="min-height:100vh" :IsLogin="IsLogin"/>
+                    <router-view style="min-height:100vh" :IsLogin="IsLogin" />
                 </v-fade-transition>
             </div>
         </main>
