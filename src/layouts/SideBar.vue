@@ -135,6 +135,15 @@
               <span class="sidebar-text">VB 儲存專案&壓縮</span>
             </router-link>
           </li>
+
+          <li class="nav-item">
+            <router-link to="/VBFuncIntro" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-book </v-icon>
+              </span>
+              <span class="sidebar-text">VB 功能概述</span>
+            </router-link>
+          </li>
           <li class="nav-item">
             <router-link to="/VBFirstWork" class="nav-link">
               <span class="sidebar-icon">
@@ -144,14 +153,36 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/VBFuncIntro" class="nav-link">
-              <span class="sidebar-icon">
-                <v-icon color="#9ca3af">mdi-book </v-icon>
+            <span
+              class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#submenu-pages1"
+            >
+              <span>
+                <span class="sidebar-icon">
+                  <v-icon color="#9ca3af">mdi-notebook-multiple</v-icon>
+                </span>
+                <span class="sidebar-text">VB 物件常用方法</span>
               </span>
-              <span class="sidebar-text">VB 功能概述</span>
-            </router-link>
+              <span class="link-arrow">
+                <v-icon color="#9ca3af">mdi-chevron-right </v-icon>
+              </span>
+            </span>
+            <div
+              class="multi-level collapse "
+              role="list"
+              id="submenu-pages1"
+              aria-expanded="false"
+            >
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBFunction/button" class="nav-link">
+                    <span class="sidebar-text">Button</span>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
           </li>
-
           <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"

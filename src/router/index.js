@@ -17,11 +17,12 @@ import operator from "../views/VBBasic/operator.vue";
 import debug from "../views/VBBasic/debug.vue";
 import pratice from "../views/VBBasic/pratice.vue";
 import home from "../views/pages/home.vue";
-import VBFirstWork from "../views/VBBasic/firstWork.vue";
+import VBFirstWork from "../views/VBStart/firstWork.vue";
 import testingSkill from "../views/VBBasic/testSkill.vue";
 import breakpoint from "../views/VBBasic/breakpoint.vue";
 import Zip from "../views/VBStart/Zip.vue";
 import w1015 from "../views/VBWork/1015.vue";
+import button from "../views/VBFunction/Button.vue";
 
 Vue.use(VueRouter);
 
@@ -117,6 +118,11 @@ const routes = [
         path: "/VBHomework/hw1015",
         name: "Homework1015",
         component: w1015,
+      },
+      {
+        path: "/VBFunction/button",
+        name: "button",
+        component: button,
       },
     ],
   },
