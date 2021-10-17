@@ -88,7 +88,7 @@
                 <td>X</td>
               </tr>
               <tr>
-                <td class="text-danger bold ">txtOutput</td>
+                <td class="text-danger bold ">txtOuput</td>
                 <td>X</td>
               </tr>
               <tr>

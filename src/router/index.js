@@ -114,7 +114,7 @@ const routes = [
         component: Zip,
       },
       {
-        path: "/VBHomework/1015",
+        path: "/VBHomework/hw1015",
         name: "Homework1015",
         component: w1015,
       },

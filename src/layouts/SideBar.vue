@@ -282,7 +282,7 @@
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <router-link to="/VBHomework/testingSkill" class="nav-link">
+                  <router-link to="/VBHomework/hw1015" class="nav-link">
                     <span class="sidebar-text">10/15作業</span>
                   </router-link>
                 </li>
