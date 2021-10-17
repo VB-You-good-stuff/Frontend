@@ -258,7 +258,37 @@
               </ul>
             </div>
           </li> -->
-
+          <li class="nav-item">
+            <span
+              class="nav-link  collapsed  d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#submenu-pages2"
+            >
+              <span>
+                <span class="sidebar-icon">
+                  <v-icon color="#9ca3af">mdi-notebook-multiple</v-icon>
+                </span>
+                <span class="sidebar-text">課程作業</span>
+              </span>
+              <span class="link-arrow">
+                <v-icon color="#9ca3af">mdi-chevron-right </v-icon>
+              </span>
+            </span>
+            <div
+              class="multi-level collapse "
+              role="list"
+              id="submenu-pages2"
+              aria-expanded="false"
+            >
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/testingSkill" class="nav-link">
+                    <span class="sidebar-text">10/15作業</span>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="nav-item ">
             <router-link to="/VBQA" class="nav-link">
               <span class="sidebar-icon">
@@ -267,7 +297,7 @@
               <span class="sidebar-text">常見問題</span>
             </router-link>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item">
             <router-link to="/forum" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-frequently-asked-questions </v-icon>
@@ -292,7 +322,7 @@
 </template>
 <script>
 export default {
-  props:["IsLogin"],
+  props: ["IsLogin"],
   methods: {
     toVBDoc() {
       this.$router.push({ name: "VBLang", params: { userId: 1 } });

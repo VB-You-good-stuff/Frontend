@@ -21,6 +21,7 @@ import VBFirstWork from "../views/VBBasic/firstWork.vue";
 import testingSkill from "../views/VBBasic/testSkill.vue";
 import breakpoint from "../views/VBBasic/breakpoint.vue";
 import Zip from "../views/VBStart/Zip.vue";
+import w1015 from "../views/VBWork/1015.vue";
 
 Vue.use(VueRouter);
 
@@ -72,8 +73,6 @@ const routes = [
         component: article_create,
       },
 
-
-      
       {
         path: "/VBBasic/define",
         name: "define",
@@ -114,6 +113,11 @@ const routes = [
         name: "Zip",
         component: Zip,
       },
+      {
+        path: "/VBHomework/1015",
+        name: "Homework1015",
+        component: w1015,
+      },
     ],
   },
   {
@@ -132,7 +136,6 @@ const routes = [
     name: "register",
     component: register,
   },
-  
 ];
 
 const router = new VueRouter({
