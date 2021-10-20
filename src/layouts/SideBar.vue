@@ -176,7 +176,7 @@
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <router-link to="/VBFunction/button" class="nav-link">
+                  <router-link to="/VBFunction/Button" class="nav-link">
                     <span class="sidebar-text">Button</span>
                   </router-link>
                 </li>

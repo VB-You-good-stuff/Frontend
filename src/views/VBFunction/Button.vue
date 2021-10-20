@@ -13,7 +13,7 @@
 
     <div class="col-12 mb-4">
       <div class="mb-3 mb-lg-0">
-        <h1 class="h3">Hide()</h1>
+        <h1 class="h3" id="Hide()">Hide()</h1>
         <p class="mb-0 fs-5">
           做用為將button物件隱藏，可以使用觸發事件來執行該方法，而佔用的電腦資源會比在屬性區直接設定visible
           = false來得少。
@@ -27,7 +27,7 @@
     </div>
     <div class="col-12 mb-4">
       <div class="mb-3 mb-lg-0">
-        <h1 class="h3">Show()</h1>
+        <h1 class="h3" id="Show()">Show()</h1>
         <p class="mb-0 fs-5">
           可以將隱藏的button物件重新生成出來，，而佔用的電腦資源會比在屬性區直接設定visible
           = false來得少。
@@ -44,7 +44,7 @@
     </div>
     <div class="col-12 mb-4">
       <div class="mb-3 mb-lg-0">
-        <h1 class="h3">ToString()</h1>
+        <h1 class="h3" id="ToString()">ToString()</h1>
         <p class="mb-0 fs-5">
           可以讀取到物件Button的Text屬性。
         </p>
@@ -60,6 +60,17 @@
     </div>
   </v-row>
 </template>
+<script>
+export default {
+	mounted() {
+		if(this.$route.params.fun != undefined){
+			const fun = document.getElementById(this.$route.params.fun)
+			console.log(fun)
+			fun.scrollIntoView()
+		}
+	},
+}
+</script>
 <style>
 .bold {
   font-weight: bold;

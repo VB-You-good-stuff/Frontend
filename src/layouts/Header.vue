@@ -8,35 +8,30 @@
         id="navbarSupportedContent"
       >
         <div class="d-flex align-items-center">
-          <!-- Search form -->
-          <!-- <form class="navbar-search form-inline" id="navbar-search-main">
+          <div class="navbar-search form-inline" id="navbar-search-main">
             <div class="input-group input-group-merge search-bar">
-              <span class="input-group-text" id="topbar-addon">
-                <svg
-                  class="icon icon-xs"
-                  x-description="Heroicon name: solid/search"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                id="topbarInputIconLeft"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="topbar-addon"
-              />
+				<span class="input-group-text" id="topbar-addon">
+					<svg
+					class="icon icon-xs"
+					x-description="Heroicon name: solid/search"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+					aria-hidden="true"
+					>
+					<path
+						fill-rule="evenodd"
+						d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+						clip-rule="evenodd"
+					></path>
+					</svg>
+				</span>
+				<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="搜尋" v-model="search">
+				<datalist id="datalistOptions" >
+					<option data v-for="data,index in search_data_arr" :key="index" :value="data" @click="select_fun(console.log(123))"/>
+				</datalist>
             </div>
-          </form> -->
+          </div>
         </div>
         <ul class="navbar-nav align-items-center">
           <!-- <li class="nav-item dropdown">
@@ -373,27 +368,77 @@
 </template>
 <script>
 export default {
-  props: ["user", "IsLogin"],
-  methods: {
-    logout: function() {
-      this.$http
-        .post(
-          "http://163.17.135.174:8082/api/logout",
-          {},
-          {
-            headers: {
-              authorization: `Bearer ${this.$store.getters.getToken}`,
-            },
-          }
-        )
-        .then((response) => {
-          if (response.status == 200) {
-            this.$store.commit("setToken", "");
-            this.$router.push("/");
-            this.$emit("logout");
-          }
-        });
-    },
-  },
+	props: ["user", "IsLogin"],
+	data() {
+		return {
+			search:"",
+			search_data:[{
+				name:"Button",
+				fun:[{
+					name:"Hide()"
+				},{
+					name:"Show()"
+				},{
+					name:"ToString()"
+				}]
+			},]
+		}
+	},
+	watch:{
+		search:function(text) {
+			const search_result_arr=this.search_data_arr.filter(a => a==text);
+			if (search_result_arr.length == 1) {
+				const search_result =search_result_arr[0].split(" -> ");
+				if (this.$route.path == `/VBFunction/${search_result[0]}`) {
+					var fun = document.getElementById(search_result[1])
+					fun.scrollIntoView()
+					this.search=""
+				}else{
+					this.$router.push({name:search_result[0],params:{'fun':search_result[1] }});
+					this.search=""
+				}
+				
+
+
+
+
+			}
+		}
+	},
+	methods: {
+		logout: function() {
+		this.$http
+			.post(
+			"http://163.17.135.174:8082/api/logout",
+			{},
+			{
+				headers: {
+				authorization: `Bearer ${this.$store.getters.getToken}`,
+				},
+			}
+			)
+			.then((response) => {
+			if (response.status == 200) {
+				this.$store.commit("setToken", "");
+				this.$router.push("/");
+				this.$emit("logout");
+			}
+			});
+		},
+		select_fun:function name(fun) {
+			console.log(fun)
+		}
+	},
+	computed:{
+		search_data_arr: function() {
+			let arr = []
+			this.search_data.forEach(item => {
+				item.fun.forEach(fun => {
+					arr.push(`${item.name} -> ${fun.name}`)
+				});
+			});
+			return arr
+		}
+	}
 };
 </script>

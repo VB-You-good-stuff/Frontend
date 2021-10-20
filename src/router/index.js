@@ -11,6 +11,8 @@ import Layout from "../layouts/Layout.vue";
 import forum_index from "../views/forum/index.vue";
 import article from "../views/forum/article.vue";
 import article_create from "../views/forum/create.vue";
+import article_edit from "../views/forum/edit_article.vue";
+import content_edit from "../views/forum/edit_content.vue";
 import define from "../views/VBBasic/define.vue";
 import dataType from "../views/VBBasic/dataType.vue";
 import operator from "../views/VBBasic/operator.vue";
@@ -69,6 +71,16 @@ const routes = [
         component: article,
       },
       {
+        path: "/forum/article_edit/:id",
+        name: "article_edit",
+        component: article_edit,
+      },
+      {
+        path: "/forum/content_edit/:id",
+        name: "content_edit",
+        component: content_edit,
+      },
+      {
         path: "/forum/create",
         name: "article_create",
         component: article_create,
@@ -120,8 +132,8 @@ const routes = [
         component: w1015,
       },
       {
-        path: "/VBFunction/button",
-        name: "button",
+        path: "/VBFunction/Button",
+        name: "Button",
         component: button,
       },
     ],
