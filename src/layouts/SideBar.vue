@@ -318,6 +318,13 @@
                   </router-link>
                 </li>
               </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/hw1022" class="nav-link">
+                    <span class="sidebar-text">10/22作業</span>
+                  </router-link>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="nav-item ">
