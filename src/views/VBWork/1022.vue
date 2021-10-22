@@ -20,67 +20,67 @@
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_1.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_1.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           按下開始
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_2.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_2.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           跳出MsgBox，並按下確定
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_3.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_3.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           按下 輸入 按鈕
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_4.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_4.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           輸入第一個InputBox
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_5.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_5.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           輸入第二個InputBox
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_6.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_6.png" class="img-fluid" />
         </div>
       </div>
       <div class="mb-3 mb-lg-0">
-        <p class="mb-0 fs-5">
+        <p class="mt-3 mb-1 fs-5">
           輸入第三個InputBox
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_7.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_7.png" class="img-fluid" />
         </div>
       </div>
       <div class="mt-3 mb-3 mb-lg-0">
@@ -144,7 +144,7 @@
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_8.jpg" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1022_8.png" class="img-fluid" />
         </div>
       </div>
     </div>
