@@ -325,6 +325,20 @@
                   </router-link>
                 </li>
               </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/hw1029" class="nav-link">
+                    <span class="sidebar-text">10/29作業</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/hw1105" class="nav-link">
+                    <span class="sidebar-text">11/05作業</span>
+                  </router-link>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="nav-item ">

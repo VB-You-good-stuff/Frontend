@@ -25,6 +25,8 @@ import breakpoint from "../views/VBBasic/breakpoint.vue";
 import Zip from "../views/VBStart/Zip.vue";
 import w1015 from "../views/VBWork/1015.vue";
 import w1022 from "../views/VBWork/1022.vue";
+import w1029 from "../views/VBWork/1029.vue";
+import w1105 from "../views/VBWork/1105.vue";
 import button from "../views/VBFunction/Button.vue";
 
 Vue.use(VueRouter);
@@ -136,6 +138,16 @@ const routes = [
         path: "/VBHomework/hw1022",
         name: "Homework1022",
         component: w1022,
+      },
+      {
+        path: "/VBHomework/hw1029",
+        name: "Homework1029",
+        component: w1029,
+      },
+      {
+        path: "/VBHomework/hw1105",
+        name: "Homework1105",
+        component: w1105,
       },
       {
         path: "/VBFunction/Button",

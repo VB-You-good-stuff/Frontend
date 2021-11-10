@@ -3,9 +3,9 @@
     <div class="py-4">
       <div class="d-flex justify-content-between w-100 flex-wrap">
         <div class="mb-3 mb-lg-0">
-          <h1 class="display-1 bold">VB 10/22 作業</h1>
+          <h1 class="display-1 bold">VB 11/05 作業</h1>
           <p class="mb-0 h4">
-            Visual Basic 10/22上課作業題目說明
+            Visual Basic 11/05上課作業題目說明
           </p>
         </div>
       </div>
@@ -15,78 +15,18 @@
       <div class="mb-3 mb-lg-0">
         <h1 class="h3">題目說明</h1>
         <p class="mb-0 fs-5">
-          透過MsgBox讓使用者輸入出生民國年，傳回出生西元年。畫面如下:
+          完成畫面上按鈕需求。畫面如下:
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_1.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          按下開始
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_2.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          跳出MsgBox，並按下確定
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_3.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          按下 輸入 按鈕
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_4.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          輸入第一個InputBox
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_5.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          輸入第二個InputBox
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_6.png" class="img-fluid" />
-        </div>
-      </div>
-      <div class="mb-3 mb-lg-0">
-        <p class="mt-3 mb-1 fs-5">
-          輸入第三個InputBox
-        </p>
-      </div>
-      <div class="card border-0 shadow">
-        <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_7.png" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1105.jpg" class="img-fluid" />
         </div>
       </div>
       <div class="mt-3 mb-3 mb-lg-0">
         <h1 class="h3">題目要求</h1>
         <p class="mb-0 mt-3 fs-5">
-          4個Label， 1個Button，各元件屬性要求如下表:
+          3個Label， 4個Button， 2個TextBox，各元件屬性要求如下表:
         </p>
       </div>
       <div class="card border-0 shadow">
@@ -110,28 +50,45 @@
             </thead>
             <tbody>
               <tr>
-                <td rowspan="4">Lable</td>
+                <td rowspan="3">Lable</td>
                 <td>(無特別規定)</td>
-                <td>基本資料:</td>
+                <td>X:</td>
               </tr>
               <tr>
+                <td>(無特別規定)</td>
+                <td>Y:</td>
+              </tr>
+              <tr>
+                <td>(無特別規定)</td>
+                <td>結果:</td>
+              </tr>
+              <tr>
+                <td rowspan="4">Button</td>
+                <td>(無特別規定)</td>
+                <td>字串串聯</td>
+              </tr>
+              <tr>
+                <td>(無特別規定)</td>
+                <td>相加</td>
+              </tr>
+              <tr>
+                <td>(無特別規定)</td>
+                <td>X ^ Y</td>
+              </tr>
+              <tr>
+                <td>(無特別規定)</td>
+                <td>X % Y</td>
+              </tr>
+              <tr>
+                <td rowspan="2">TextBox</td>
                 <td>(無特別規定)</td>
                 <td>(清空)</td>
               </tr>
               <tr>
                 <td>(無特別規定)</td>
-                <td>出生西元年</td>
-              </tr>
-              <tr>
-                <td>(無特別規定)</td>
                 <td>(清空)</td>
               </tr>
-
-              <tr>
-                <td>Button</td>
-                <td>(無特別規定)</td>
-                <td>輸入</td>
-              </tr>
+              <tr></tr>
             </tbody>
           </table>
         </div>
@@ -144,7 +101,13 @@
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/1022_8.png" class="img-fluid" />
+          <img src="../../assets/img/VBImg/1105_1.jpg" class="img-fluid mr-2" />
+          <img src="../../assets/img/VBImg/1105_2.jpg" class="img-fluid" />
+        </div>
+
+        <div class="card-body">
+          <img src="../../assets/img/VBImg/1105_3.jpg" class="img-fluid mr-2" />
+          <img src="../../assets/img/VBImg/1105_4.jpg" class="img-fluid" />
         </div>
       </div>
       <div class="mt-3 mb-3 mb-lg-0">
@@ -158,7 +121,7 @@
             >
             <v-expansion-panel-content>
               <img
-                src="../../assets/img/VBImg/10_22.png"
+                src="../../assets/img/VBImg/11_05.png"
                 class="img-fluid mr-2"
               />
             </v-expansion-panel-content>
