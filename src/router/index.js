@@ -28,7 +28,9 @@ import w1022 from "../views/VBWork/1022.vue";
 import w1029 from "../views/VBWork/1029.vue";
 import w1105 from "../views/VBWork/1105.vue";
 import button from "../views/VBFunction/Button.vue";
-
+import form from "../views/VBFunction/Form.vue";
+import label from "../views/VBFunction/Label.vue";
+import textbox from "../views/VBFunction/TextBox.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -153,6 +155,20 @@ const routes = [
         path: "/VBFunction/Button",
         name: "Button",
         component: button,
+      },
+      {
+        path: "/VBFunction/Form",
+        name: "Form",
+        component: form,
+      },
+      {
+        path: "/VBFunction/Label",
+        name: "Label",
+        component: label,
+      },{
+        path: "/VBFunction/TextBox",
+        name: "TextBox",
+        component: textbox,
       },
     ],
   },

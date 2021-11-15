@@ -3,9 +3,9 @@
     <div class="py-4">
       <div class="d-flex justify-content-between w-100 flex-wrap">
         <div class="mb-3 mb-lg-0">
-          <h1 class="display-1 bold">Button 常用方法</h1>
+          <h1 class="display-1 bold">Label 常用方法</h1>
           <p class="mb-0 h4">
-            VB 物件Button常用的方法說明
+            VB 物件Label常用的方法說明
           </p>
         </div>
       </div>
@@ -15,8 +15,7 @@
       <div class="mb-3 mb-lg-0">
         <h1 class="h3" id="Hide()">Hide()</h1>
         <p class="mb-0 fs-5">
-          做用為將button物件隱藏，可以使用觸發事件來執行該方法，而佔用的電腦資源會比在屬性區直接設定visible
-          = false來得少。
+          將label隱藏。
         </p>
       </div>
       <!-- <div class="card border-0 shadow">
@@ -29,8 +28,7 @@
       <div class="mb-3 mb-lg-0">
         <h1 class="h3" id="Show()">Show()</h1>
         <p class="mb-0 fs-5">
-          可以將隱藏的button物件重新生成出來，，而佔用的電腦資源會比在屬性區直接設定visible
-          = false來得少。
+          將隱藏的label顯示出來。
         </p>
       </div>
       <!-- <div class="card border-0 shadow">
@@ -46,7 +44,7 @@
       <div class="mb-3 mb-lg-0">
         <h1 class="h3" id="ToString()">ToString()</h1>
         <p class="mb-0 fs-5">
-          可以讀取到物件Button的Text屬性。
+          回傳包含label名稱的字串。
         </p>
       </div>
       <!-- <div class="card border-0 shadow">
@@ -74,22 +72,7 @@
         </div>
       </div> -->
     </div>
-    <div class="col-12 mb-4">
-      <div class="mb-3 mb-lg-0">
-        <h1 class="h3" id="NotifyDefault()">NotifyDefault()</h1>
-        <p class="mb-0 fs-5">
-          通知button是否為預設按鈕。
-        </p>
-      </div>
-      <!-- <div class="card border-0 shadow">
-        <div class="card-body">
-          <img
-            src="../../assets/img/VBImg/VB_install_3.png"
-            class="img-fluid"
-          />
-        </div>
-      </div> -->
-    </div>
+    
   </v-row>
 </template>
 <script>

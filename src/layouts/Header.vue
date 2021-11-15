@@ -373,6 +373,19 @@ export default {
 		return {
 			search:"",
 			search_data:[{
+				name:"Form",
+				fun:[{
+					name:"Close()"
+				},{
+					name:"Hide()"
+				},{
+					name:"Show()"
+				},{
+					name:"SetDesktopLocation()"
+				},{
+					name:"CenterToScreen()"
+				}]
+			},{
 				name:"Button",
 				fun:[{
 					name:"Hide()"
@@ -380,7 +393,41 @@ export default {
 					name:"Show()"
 				},{
 					name:"ToString()"
+				},{
+					name:"GetPreferredSize()"
+				},{
+					name:"NotifyDefault()"
 				}]
+			},{
+				name:"TextBox",
+				fun:[{
+					name:"Copy()"
+				},{
+					name:"Clear()"
+				},{
+					name:"Cut()"
+				},{
+					name:"Paste()"
+				},{
+					name:"Undo()"
+				},{
+					name:"SelectAll()"
+				},{
+					name:"AppendText()"
+				},{
+					name:"ResetText()"
+				}]
+			},{
+				name:"Label",
+				fun:[{
+					name:"Hide()"
+				},{
+					name:"Show()"
+				},{
+					name:"ToString()"
+				},{
+					name:"GetPreferredSize()"
+				},]
 			},]
 		}
 	},

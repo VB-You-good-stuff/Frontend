@@ -180,6 +180,21 @@
                     <span class="sidebar-text">Button</span>
                   </router-link>
                 </li>
+                <li class="nav-item">
+                  <router-link to="/VBFunction/Form" class="nav-link">
+                    <span class="sidebar-text">Form</span>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link to="/VBFunction/TextBox" class="nav-link">
+                    <span class="sidebar-text">TextBox</span>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link to="/VBFunction/Label" class="nav-link">
+                    <span class="sidebar-text">Label</span>
+                  </router-link>
+                </li>
               </ul>
             </div>
           </li>
