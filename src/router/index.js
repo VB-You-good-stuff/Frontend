@@ -31,6 +31,7 @@ import button from "../views/VBFunction/Button.vue";
 import form from "../views/VBFunction/Form.vue";
 import label from "../views/VBFunction/Label.vue";
 import textbox from "../views/VBFunction/TextBox.vue";
+import ifElse from "../views/VBAdvanced/IfElse.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -90,7 +91,6 @@ const routes = [
         name: "article_create",
         component: article_create,
       },
-
       {
         path: "/VBBasic/define",
         name: "define",
@@ -165,10 +165,16 @@ const routes = [
         path: "/VBFunction/Label",
         name: "Label",
         component: label,
-      },{
+      },
+      {
         path: "/VBFunction/TextBox",
         name: "TextBox",
         component: textbox,
+      },
+      {
+        path: "/VBAdvanced/if-Else",
+        name: "ifElse",
+        component: ifElse,
       },
     ],
   },

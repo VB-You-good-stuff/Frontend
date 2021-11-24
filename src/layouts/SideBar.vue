@@ -202,7 +202,7 @@
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
-              data-bs-target="#submenu-pages"
+              data-bs-target="#submenu-pages2"
             >
               <span>
                 <span class="sidebar-icon">
@@ -217,7 +217,7 @@
             <div
               class="multi-level collapse "
               role="list"
-              id="submenu-pages"
+              id="submenu-pages2"
               aria-expanded="false"
             >
               <ul class="flex-column nav">
@@ -272,11 +272,11 @@
             </div>
           </li>
 
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
-              data-bs-target="#submenu-pages1"
+              data-bs-target="#submenu-pages3"
             >
               <span>
                 <span class="sidebar-icon">
@@ -292,23 +292,23 @@
             <div
               class="multi-level collapse "
               role="list"
-              id="submenu-pages1"
+              id="submenu-pages3"
               aria-expanded="false"
             >
               <ul class="flex-column nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/examples/sign-in.html">
-                    <span class="sidebar-text">網頁建置中</span>
-                  </a>
+                  <router-link to="/VBAdvanced/if-Else" class="nav-link">
+                    <span class="sidebar-text">If-Eles</span>
+                  </router-link>
                 </li>
               </ul>
             </div>
-          </li> -->
+          </li>
           <li class="nav-item">
             <span
               class="nav-link  collapsed  d-flex justify-content-between align-items-center"
               data-bs-toggle="collapse"
-              data-bs-target="#submenu-pages2"
+              data-bs-target="#submenu-pages4"
             >
               <span>
                 <span class="sidebar-icon">
@@ -323,7 +323,7 @@
             <div
               class="multi-level collapse "
               role="list"
-              id="submenu-pages2"
+              id="submenu-pages4"
               aria-expanded="false"
             >
               <ul class="flex-column nav">
