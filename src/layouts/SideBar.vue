@@ -354,7 +354,29 @@
                   </router-link>
                 </li>
               </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/hw1126" class="nav-link">
+                    <span class="sidebar-text">11/26作業</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBHomework/hw1203" class="nav-link">
+                    <span class="sidebar-text">12/03作業</span>
+                  </router-link>
+                </li>
+              </ul>
             </div>
+          </li>
+          <li class="nav-item ">
+            <router-link to="/VBfinal" class="nav-link">
+              <span class="sidebar-icon">
+                <v-icon color="#9ca3af">mdi-notebook-multiple</v-icon>
+              </span>
+              <span class="sidebar-text">迴圈練習題</span>
+            </router-link>
           </li>
           <li class="nav-item ">
             <router-link to="/VBQA" class="nav-link">

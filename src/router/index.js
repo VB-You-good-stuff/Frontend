@@ -27,11 +27,15 @@ import w1015 from "../views/VBWork/1015.vue";
 import w1022 from "../views/VBWork/1022.vue";
 import w1029 from "../views/VBWork/1029.vue";
 import w1105 from "../views/VBWork/1105.vue";
+import w1126 from "../views/VBWork/1126.vue";
+import w1203 from "../views/VBWork/1203.vue";
 import button from "../views/VBFunction/Button.vue";
 import form from "../views/VBFunction/Form.vue";
 import label from "../views/VBFunction/Label.vue";
 import textbox from "../views/VBFunction/TextBox.vue";
 import ifElse from "../views/VBAdvanced/IfElse.vue";
+import selectCase from "../views/VBAdvanced/selectCase.vue";
+import VBfinal from "../views/VBfinal.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -65,6 +69,11 @@ const routes = [
         path: "/VBQA",
         name: "VBQA",
         component: VBQandA,
+      },
+      {
+        path: "/VBfinal",
+        name: "VBfinal",
+        component: VBfinal,
       },
       {
         path: "/forum",
@@ -152,6 +161,16 @@ const routes = [
         component: w1105,
       },
       {
+        path: "/VBHomework/hw1126",
+        name: "Homework1126",
+        component: w1126,
+      },
+      {
+        path: "/VBHomework/hw1203",
+        name: "Homework1203",
+        component: w1203,
+      },
+      {
         path: "/VBFunction/Button",
         name: "Button",
         component: button,
@@ -175,6 +194,11 @@ const routes = [
         path: "/VBAdvanced/if-Else",
         name: "ifElse",
         component: ifElse,
+      },
+      {
+        path: "/VBAdvanced/select case",
+        name: "selectCase",
+        component: selectCase,
       },
     ],
   },
