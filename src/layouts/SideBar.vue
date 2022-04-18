@@ -302,6 +302,62 @@
                   </router-link>
                 </li>
               </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/Select Case" class="nav-link">
+                    <span class="sidebar-text">Select-Case</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/Loop" class="nav-link">
+                    <span class="sidebar-text">VB的迴圈</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBfinal" class="nav-link">
+                    <span class="sidebar-text">迴圈練習題</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/ForNext" class="nav-link">
+                    <span class="sidebar-text">For...Next</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/DoLoop" class="nav-link">
+                    <span class="sidebar-text">Do...Loop</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/NestedLoop" class="nav-link">
+                    <span class="sidebar-text">巢狀迴圈</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/Array" class="nav-link">
+                    <span class="sidebar-text">陣列</span>
+                  </router-link>
+                </li>
+              </ul>
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <router-link to="/VBAdvanced/Sort" class="nav-link">
+                    <span class="sidebar-text">排序</span>
+                  </router-link>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="nav-item">
@@ -370,14 +426,14 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
             <router-link to="/VBfinal" class="nav-link">
               <span class="sidebar-icon">
                 <v-icon color="#9ca3af">mdi-notebook-multiple</v-icon>
               </span>
               <span class="sidebar-text">迴圈練習題</span>
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item ">
             <router-link to="/VBQA" class="nav-link">
               <span class="sidebar-icon">

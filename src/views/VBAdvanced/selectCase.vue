@@ -15,23 +15,18 @@
       <div class="mb-3 mb-lg-0">
         <h1 class="h3">Select Case</h1>
         <p class="mb-0 fs-5">
-          當今天我們<font class="bold text-success "> 有多個選項要做選擇 </font
-          >時，我們會<font class="bold text-success "> 使用If…Then來判斷 </font
-          >。例如:在日常生活中，我們決定今天出門該不該帶雨傘時，我們會依據天氣來做判斷，如果會下雨我就帶傘，反之，不會下雨我今天就不必帶傘。
+         前面的教學我們知道程式碼需要判斷時可以使用IF...THEN...ELSE，但今天如果選擇條件很多，使用IF這個方法會變得非常冗長，且難以維護與識別，這時我們會使用Select...Case的方法。
         </p>
       </div>
       <div class="mb-3 mb-lg-0">
         <p class="mb-0 mt-3 fs-5">
-          那我們就試著將上面這段判斷<font class="bold text-success ">
-            是否下雨決定帶不帶傘</font
-          >的描述撰寫成程式碼吧!<br />
-          首先，拉出一個能讓使用者輸入今天有沒有下雨的畫面，畫面及各元件屬性如下
-          :
+          那我們就試著用 判斷月份是第幾個季節 這個例子來看看IF-ELSE跟Select-Case的差異吧!<br>
+          首先，拉出一個能讓使用者輸入月份的畫面，畫面及各元件屬性如下 :
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/ifelse.png" class="img-fluid" />
+          <img src="../../assets/img/VBImg/selectcase1.jpg" class="img-fluid" />
           <table
             class="table table-striped table-hover"
             style="text-align:center; vertical-align: middle;"
@@ -52,8 +47,8 @@
             <tbody>
               <tr>
                 <td rowspan="2">Lable</td>
-                <td>lbl_descibe</td>
-                <td>今天有沒有下雨?</td>
+                <td>lbl_describe</td>
+                <td>輸入月份:</td>
               </tr>
               <tr>
                 <td>lbl_show</td>
@@ -81,21 +76,13 @@
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
-          <img src="../../assets/img/VBImg/ifelse_1.png" class="img-fluid" />
+          <img src="../../assets/img/VBImg/selectcase2.jpg" class="img-fluid" />
         </div>
       </div>
 
       <div class="mb-3 mb-lg-0">
         <p class="mb-0 mt-3 fs-5">
-          雖然上圖的程式碼也能完成題目的內容，但會發現這種<font
-            class="bold text-success "
-          >
-            撰寫方式太過冗長了 </font
-          >，除了每種假設都要寫一次If外，還必須將使用者輸入有沒有以外的字句都一一考慮進去，因此我們會<font
-            class="bold text-success "
-          >
-            利用 ElesIf 以及 Eles </font
-          >來幫助我們達成問題的需求
+          我們先用IF判斷式來完成月份的判斷，會發現條件越多的判斷式非常不直觀，不好修改也不好維護，因此我們在撰寫程式時，遇到有很多條件的情況，會習慣使用Select-Case的方法來做敘述。
         </p>
       </div>
       <div class="card border-0 shadow">
@@ -105,32 +92,16 @@
       </div>
       <div class="mb-3 mb-lg-0">
         <p class="mb-0 mt-3 fs-5">
-          將原本的程式碼改成使用ElseIf & Else
-          後，會發現程式碼與原本的相比短了些，且<font
-            class="bold text-success "
-          >
-            Else的判斷句 </font
-          >幫助我們<font class="bold text-success "> 不必 </font
-          >將所有使用者可能會輸入的錯誤<font class="bold text-success ">
-            都列出來 </font
-          >，是不是很方便呢?<br />
-          當然我們還是要執行一下結果，結果畫面如下:
+          將原本的程式碼改成使用Select-Case的方法，發現條件區塊劃分的比較明顯與直觀。當然再撰寫程式時條件的判斷沒有規定一定要用哪種方法，但建議大家多試試各種寫法，找到在不同情境下適合用於描述條件的方式。
+          <br>當然我們還是要執行一下結果，結果畫面如下:
         </p>
       </div>
       <div class="card border-0 shadow">
         <div class="card-body">
           <img
-            src="../../assets/img/VBImg/ifelse_3.png"
+            src="../../assets/img/VBImg/selectcase4.jpg"
             class="img-fluid"
-          /><br />
-          <img
-            src="../../assets/img/VBImg/ifelse_4.png"
-            class="img-fluid"
-          /><br />
-          <img
-            src="../../assets/img/VBImg/ifelse_5.png"
-            class="img-fluid"
-          /><br />
+          />
         </div>
       </div>
     </div>

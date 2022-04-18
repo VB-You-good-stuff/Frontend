@@ -36,6 +36,12 @@ import textbox from "../views/VBFunction/TextBox.vue";
 import ifElse from "../views/VBAdvanced/IfElse.vue";
 import selectCase from "../views/VBAdvanced/selectCase.vue";
 import VBfinal from "../views/VBfinal.vue";
+import loop from "../views/VBAdvanced/loop.vue";
+import forNext from "../views/VBAdvanced/forNext.vue";
+import DoLoop from "../views/VBAdvanced/doLoop.vue";
+import array from "../views/VBAdvanced/array.vue";
+import nestedLoop from "../views/VBAdvanced/nestedLoop.vue";
+import sort from "../views/VBAdvanced/sort.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -200,6 +206,36 @@ const routes = [
         name: "selectCase",
         component: selectCase,
       },
+      {
+        path: "/VBAdvanced/Loop",
+        name: "loop",
+        component: loop,
+      },
+      {
+        path: "/VBAdvanced/ForNext",
+        name: "forNext",
+        component: forNext,
+      },
+      {
+        path: "/VBAdvanced/DoLoop",
+        name: "DoLoop",
+        component: DoLoop,
+      },
+      {
+        path: "/VBAdvanced/Array",
+        name: "Array",
+        component: array,
+      },
+      {
+        path: "/VBAdvanced/NestedLoop",
+        name: "NestedLoop",
+        component: nestedLoop,
+      },
+      {
+        path: "/VBAdvanced/Sort",
+        name: "Sort",
+        component: sort,
+      },
     ],
   },
   {
@@ -224,8 +260,17 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
-  scrollBehavior() {
-    return { x: 0, y: 0 };
+  // scrollBehavior() {
+  //   return { x: 0, y: 0 };
+  // },
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: "smooth",
+      };
+    }
+    return { x: 0, y: 0 }; // Go to the top of the page if no hash
   },
 });
 

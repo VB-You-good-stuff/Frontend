@@ -52,7 +52,7 @@
             <tbody>
               <tr>
                 <td rowspan="2">Lable</td>
-                <td>lbl_descibe</td>
+                <td>lbl_describe</td>
                 <td>今天有沒有下雨?</td>
               </tr>
               <tr>
